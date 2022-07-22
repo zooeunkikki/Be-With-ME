@@ -74,7 +74,6 @@ header .hd {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFEAB5;
 }
 header .hd h2 {
   margin: 0;
@@ -240,7 +239,7 @@ footer ul li div a:hover {
 }
 
 main {
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 main .slide ul li {
   position: relative;
@@ -290,11 +289,137 @@ main .slide ul li .slide-txt a::after {
   padding-left: 20px;
 }
 main .adopt {
-  margin: 200px;
+  margin: 200px auto 300px;
+}
+main .adopt .ad-txt {
+  text-align: center;
+}
+main .adopt .ad-txt h2 {
+  font-family: "S-CoreDream-6Bold";
+  padding: 0;
+  margin: 0px;
+  font-size: 2.5rem;
+  color: #FC9803;
+}
+main .adopt .adopt-slide {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .adopt .adopt-slide .rotate-circle {
+  position: relative;
+  width: 40%;
+}
+main .adopt .adopt-slide .rotate-circle .rotate {
+  display: block;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border: 3px solid #FC9803;
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li {
+  display: block;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  width: 20%;
+  height: 20%;
+  padding: 2% 3%;
+  background-color: #FFF3DB;
+  border-radius: 100%;
+  transition: 0.3s ease;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(1) {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  height: 7vh;
+  overflow: hidden;
+  vertical-align: top;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(2) {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.2rem;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon::before {
+  transition: 0.3s ease;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon:hover::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  background-color: #FC9803;
+  border-radius: 100px;
+  font-family: "S-CoreDream-5Medium";
+  color: #444;
+  font-size: 2rem;
+}
+main .adopt .adopt-slide .rotate-circle .circle {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  display: inline-block;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 60%;
+  background: #FFDD85;
+  box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.2);
+  border-radius: 100%;
+}
+main .adopt .adopt-slide .adopt-Ri-txt {
+  position: relative;
+  width: 40%;
+}
+main .adopt .adopt-slide .adopt-Ri-txt ul {
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  padding: 10% 20%;
+}
+main .adopt .adopt-slide .adopt-Ri-txt ul li h2 {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 2.5rem;
+}
+main .adopt .adopt-slide .adopt-Ri-txt ul li p {
+  margin-top: 30px;
+  font-family: "S-CoreDream-3Light";
+  color: #8E8E8E;
+  font-size: 1.5rem;
+}
+main .adopt .adopt-slide .adopt-Ri-txt::before {
+  content: "";
+  display: inline-block;
+  height: 80%;
+  border-left: 3px solid #FC9803;
+  transform: translate(-60px, 20px);
 }
 main .find {
   background-color: #FFF3DB;
   text-align: center;
+}
+main .find .find-txt {
+  padding-top: 50px;
 }
 main .find .find-txt h2 {
   font-family: "S-CoreDream-6Bold";
@@ -534,7 +659,7 @@ main .family .fa-review ul li .li-txt p {
 main .missing {
   margin-top: 250px;
   padding: 100px;
-  background: url("../img/vanner/cat_dog 2.png") 0% 100%/50% no-repeat;
+  background: url("../img/vanner/cat_dog 2.png") -10% 100%/50% no-repeat;
   background-color: #FFF3DB;
 }
 main .missing .mi-btn a {
@@ -564,7 +689,7 @@ main .missing .mibox .miss-txt h2 {
   text-align: center;
   font-family: "UhBeeZZIBA-Regular";
   white-space: pre-line;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: #935F10;
   font-weight: 300;
   margin: 0;
@@ -616,4 +741,86 @@ main .missing .mibox ul li .mi-txt p {
 }
 main .missing .mibox ul li .mi-txt p:nth-last-of-type(1) {
   padding-bottom: 20px;
+}
+main .missing .mi-sub-btn {
+  margin-top: 150px;
+  padding: 0 100px;
+  text-align: center;
+}
+main .missing .mi-sub-btn a:nth-of-type(1) {
+  background: url("../img/icon/missing_icon_y.png") 50% 80%/30% no-repeat;
+  transform: translate(-55%, 0%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(1):hover {
+  background: url("../img/icon/missing_icon_w.png") 50% 80%/30% no-repeat;
+  transform: translate(-55%, -20%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(2) {
+  background: url("../img/icon/protect_icon_y.png") 50% 80%/30% no-repeat;
+  transform: translate(-80%, 0%);
+}
+main .missing .mi-sub-btn a:nth-of-type(2):hover {
+  background: url("../img/icon/protect_icon_w.png") 50% 80%/30% no-repeat;
+  transform: translate(-80%, -20%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(3) {
+  background: url("../img/icon/mook_icon_y.png") 50% 80%/30% no-repeat;
+  transform: translate(-100%, 0%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(3):hover {
+  background: url("../img/icon/mook_icon_w.png") 50% 80%/30% no-repeat;
+  transform: translate(-100%, -20%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(1) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 60px 20px;
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+main .missing .mi-sub-btn a:nth-of-type(2) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 60px 20px;
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+main .missing .mi-sub-btn a:nth-of-type(3) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 60px 20px;
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+main .missing .mi-sub-btn a:hover {
+  background-color: #FFD231 !important;
+  box-shadow: 10px 10px 10px rgba(142, 142, 142, 0.4117647059);
+}
+main .vanner {
+  margin-top: 200px;
+  overflow: hidden;
+}
+main .vanner a {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  overflow: hidden;
+}
+main .vanner a img {
+  width: 100%;
+  vertical-align: top;
 }/*# sourceMappingURL=index.css.map */

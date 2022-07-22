@@ -1,0 +1,26 @@
+@import "_common";
+
+main{
+    
+    .vanner{
+        p{
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            background-color: rgba(255, 224, 190, 0.8);
+
+            img{
+                vertical-align: top;
+                width: 100%;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .adopt{
+        hgroup{
+            h2{}
+            h4{}
+        }
+    }
+}

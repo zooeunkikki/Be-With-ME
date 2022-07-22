@@ -2,7 +2,7 @@
 
 
 main {
-    margin: 100px auto;
+    margin: 100px auto 0;
 
     .slide {
         ul {
@@ -65,14 +65,149 @@ main {
     }
 
     .adopt{
-        margin: $cushion200;
+        margin: 200px auto 300px;
+
+        .ad-txt{
+            text-align: center;
+            h2{
+                font-family: 'S-CoreDream-6Bold';
+                padding: 0;
+                margin: 0px;
+                font-size: 2.5rem;
+                color: $font-Y1;
+            }
+        }
+
+        .adopt-slide{
+        margin-top: $cushion100;
+        display: flex;
+        justify-content: space-evenly;
+        .rotate-circle{
+            position: relative;
+            width: 40%;
+            .rotate{
+                display: block;
+                ul{
+                    position: relative;
+                    width: 100%;
+                    height: 50%;
+                    border: 3px solid $font-Y1;
+                    border-radius: 50%;
+                    transform: rotate(0deg);
+
+                    li{
+                        display: block;
+
+                        .slide-icon{
+                            display: block;
+                            position: relative;
+                            text-align: center;
+                            margin: 0;
+                            width: 20%;
+                            height: 20%;
+                            padding: 2% 3%;
+                            background-color: $font-Y5;
+                            border-radius: 100%;
+                            transition: 0.3s ease;
+                            p:nth-of-type(1){
+                                margin: 0 auto;
+                                padding: 0;
+                                width: 80%;
+                                height: 7vh;
+                                overflow: hidden;
+                                vertical-align: top;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    vertical-align: top;
+                                }
+                            }
+                            p:nth-of-type(2){
+                                margin: 0;
+                                margin-top: 10px;
+                                padding: 0;
+                                font-family: 'S-CoreDream-5Medium';
+                                font-size: 1.2rem;
+                            }
+
+
+                            &::before{
+                                transition: 0.3s ease;
+                            }
+
+                            &:hover::before{
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                top: 0%; right: 0%;
+                                width: 50px;
+                                height: 50px;
+                                background-color: $font-Y1;
+                                border-radius: 100px;
+                                font-family: 'S-CoreDream-5Medium';
+                                color:$font-colorg1;
+                                font-size: 2rem;
+                            }
+                        }
+                        span{}
+                    }
+                }
+            }
+
+            .circle{
+                position: absolute;
+                left: 20%; top: 20%;
+                    display: inline-block;
+                    font-size: 0;
+                    padding: 0;
+                    margin: 0;
+                    width: 60%;
+                    height: 60%;
+                    background: #FFDD85;
+                    box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.2);
+                    border-radius: 100%;
+
+            }
+        }
+
+        .adopt-Ri-txt{
+            position: relative;
+            width: 40%;
+            ul{
+                position: absolute;
+                left: 0%; top: 10%;
+                padding: 10% 20%;
+                li{
+                    h2{
+                        font-family: 'S-CoreDream-5Medium';
+                        font-size: 2.5rem;
+                    }
+                    p{
+                        margin-top: 30px;
+                        font-family: 'S-CoreDream-3Light';
+                        color: $font-colorg2;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            &::before{
+                content: '';
+                display: inline-block;
+                height: 80%;
+                border-left: 3px solid $font-Y1;
+                transform: translate(-60px, 20px);
+            }
+        }
     }
+}
 
     .find {
         background-color: $font-Y5;
         text-align: center;
 
         .find-txt {
+            padding-top: 50px;
             h2 {
                 font-family: 'S-CoreDream-6Bold';
                 padding: 0;
@@ -342,7 +477,7 @@ main {
     .missing{
         margin-top: $cushion250;
         padding: $cushion100;
-        background: url('../img/vanner/cat_dog\ 2.png') 0% 100% /50% no-repeat;
+        background: url('../img/vanner/cat_dog\ 2.png') -10% 100% /50% no-repeat;
         background-color: $font-Y5;
         .mi-btn{
             a{
@@ -373,7 +508,7 @@ main {
                     text-align: center;
                     font-family: 'UhBeeZZIBA-Regular';
                     white-space: $pre;
-                    font-size: 3.5rem;
+                    font-size: 4.5rem;
                     color: #935F10;
                     font-weight: 300;
                     margin: 0;
@@ -435,7 +570,87 @@ main {
         }
 
         .mi-sub-btn{
-            a{}
+            margin-top: $cushion150;
+            padding: 0 100px;
+            text-align: center;
+
+            a:nth-of-type(1){
+                background: url('../img/icon/missing_icon_y.png')50% 80% /30% no-repeat;
+                transform: translate(-55%,0%) !important;
+                &:hover{
+                    background: url('../img/icon/missing_icon_w.png')50% 80% /30% no-repeat;
+                    transform: translate(-55%,-20%)!important;
+
+                }
+            }
+            a:nth-of-type(2){
+                background: url('../img/icon/protect_icon_y.png')50% 80% /30% no-repeat;
+                transform: translate(-80%,0%);
+                &:hover{
+                    background: url('../img/icon/protect_icon_w.png')50% 80% /30% no-repeat;
+                    transform: translate(-80%,-20%)!important;
+                }
+            }
+            a:nth-of-type(3){
+                background: url('../img/icon/mook_icon_y.png')50% 80% /30% no-repeat;
+                transform: translate(-100%,0%) !important;
+                &:hover{
+                    background: url('../img/icon/mook_icon_w.png')50% 80% /30% no-repeat;
+                    transform: translate(-100%,-20%)!important;
+                }
+            }
+
+            $subBtn : (1,2,3);
+            @each $b in $subBtn {
+                a:nth-of-type(#{$b}){
+                    display: inline-block;
+                    width: 200px;
+                    height: 200px;
+                    padding: 60px 20px;
+                    font-family: 'S-CoreDream-3Light';
+                    font-size: 1.5rem;
+                    border-radius: 50%;
+                    // margin-right: 30px;
+                    background-color: $Wh;
+                    transition: 0.5s ease;
+                    // transform: translate(0%);
+                }
+            }
+            
+            a:hover{
+                background-color: $font-Y2 !important;
+                box-shadow: 10px 10px 10px #8e8e8e69;
+                // transform: translate(-80%,-20%)!important;
+                // transform: translateY(-20%);
+            }
+            
+        }
+    }
+
+    .vanner{
+        margin-top: $cushion200;
+        overflow: hidden;
+        a{
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            overflow: hidden;
+            img{
+                width: 100%;
+                vertical-align: top;
+            }
+
+            // &::before{
+            //     content: "";
+            //     display: block;
+            //     width: 80%;
+            //     border-top: 2px solid $font-Y3;
+            //     margin: 10%;
+
+                
+            // }
         }
     }
 }

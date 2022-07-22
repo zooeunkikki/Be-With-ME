@@ -52,6 +52,7 @@
 // cushion
 $cushion250 : 250px;
 $cushion200 : 200px;
+$cushion150 : 150px;
 $cushion100 : 100px;
 $cushion70 : 70px;
 $cushion50 : 50px;
@@ -74,6 +75,7 @@ $font-Y5:#FFF3DB;
 
 $font-foot1: #746454;
 $Brown: #AA6600;
+$Wh: #fff;
 
 // font-preline
 $pre: pre-line;
@@ -136,7 +138,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: $font-Y4;
+        // background-color: $font-Y4;
 
         h2 {
             margin: 0;
