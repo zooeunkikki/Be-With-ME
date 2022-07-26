@@ -1,0 +1,228 @@
+@import "_common";
+
+p{margin: 0;padding: 0;}
+h6{
+    font-family: 'S-CoreDream-5Medium';
+}
+main{
+    .icon{
+        display: flex;
+        text-align: center;
+
+        .insta{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: $font-Y3;
+                margin-left: 1563px;
+                margin-right: 7px;
+                padding: 6px;
+        }
+
+        .facebook{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: $font-Y3;
+            margin-right: 7px;
+            padding: 7px;
+    }
+
+    .chat{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $font-Y3;
+        margin-right: 7px;
+        padding: 7px;
+    }
+
+    .share{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $font-Y3;
+        padding: 5px;
+    }
+
+ 
+
+
+
+
+
+
+}
+
+.protect_animal{
+    padding-bottom: 46px;
+    h2{color: $font-colorg1;
+        font-size: 50px;
+        // margin: 0 auto;
+        text-align: center;
+        font-family: 'S-CoreDream-6Bold';
+    }
+    p{color: $font-colorg2; 
+        font-size: 25px;
+        text-align: center;
+        font-family: 'S-CoreDream-3Light';
+    }
+}
+
+
+
+.enroll{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 67px;
+    .yellow1{
+    display: flex;
+    width: 222px;
+    height: 59px;
+    border-radius: 25px;
+    background-color: $font-Y2;
+    align-items: center;
+    justify-content: center;
+    p{font-family: 'S-CoreDream-5Medium';
+        font-size: 26px;
+        padding-right: 5px;
+        color: #fff;
+    }
+    .fa-solid{                   
+        font-family: "FontAwesome";
+        content: "\f15c";
+        color: #fff;
+        font-size: 3rem;}
+}
+}
+
+.sort{display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 35px;
+    margin-bottom: 93px;
+    
+        div{
+            margin-right: 42px;
+            &:nth-last-of-type(1){
+                margin-right: 0;
+            }
+            & a:hover{color: $font-Y2;}
+        }
+    .s1{
+        ul{
+            li:nth-of-type(1){display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                P:nth-of-type(1){
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    // padding-right: 19px;
+                    vertical-align: top;
+                    img{
+                        vertical-align: top;
+                        width: 100%;
+                    }
+                }
+                a{
+                    font-size: 22px;
+                    font-family: 'S-CoreDream-5Medium';
+                }
+            }
+            li{margin: 0 auto;
+                P{}
+            }
+        }
+    }
+    .s2{
+        ul{
+            li:nth-of-type(1){display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                P:nth-of-type(1){
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: top;
+                    img{
+                        vertical-align: top;
+                        width: 100%;
+                    }
+                }
+                a{font-size: 22px;
+                font-family: 'S-CoreDream-5Medium';}
+            }
+            li{margin: 0 auto;
+                P{}
+            }
+        }
+    }
+    .s3{
+        ul{
+            li:nth-of-type(1){display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                P:nth-of-type(1){
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: top;
+                    img{
+                        vertical-align: top;
+                        width: 100%;
+                    }}
+                a{font-size: 22px;
+                font-family: 'S-CoreDream-5Medium';}
+            }
+            li{margin: 0 auto;
+                P{}
+            }
+        }
+    }
+    .s4{
+        ul{
+            li:nth-of-type(1){display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                P:nth-of-type(1){
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: top;
+                    img{
+                        vertical-align: top;
+                        width: 100%;
+                    }}
+                a{font-size: 22px;
+                    font-family: 'S-CoreDream-5Medium';}
+            }
+            li{margin: 0 auto;
+                P{}
+            }
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

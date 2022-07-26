@@ -4,7 +4,49 @@ p{margin: 0;padding: 0;}
 h6{
     font-family: 'S-CoreDream-5Medium';
 }
-main{padding-top: 100px;
+main{
+
+    .icon{
+        display: flex;
+        text-align: center;
+
+        .insta{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: $font-Y3;
+                margin-left: 1563px;
+                margin-right: 7px;
+                padding: 6px;
+        }
+
+        .facebook{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: $font-Y3;
+            margin-right: 7px;
+            padding: 7px;
+    }
+
+    .chat{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $font-Y3;
+        margin-right: 7px;
+        padding: 7px;
+    }
+
+    .share{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $font-Y3;
+        padding: 5px;
+    }
+
+    }
 
 
 .adopt-animal{
@@ -20,7 +62,8 @@ main{padding-top: 100px;
         font-family: 'S-CoreDream-3Light';
     }
 }
-}
+
+
 .sort{display: flex;
 justify-content: center;
 align-items: flex-end;
@@ -135,6 +178,7 @@ margin-top: 35px;
 display: flex;
 align-items: center;
 justify-content: space-between;
+padding-bottom: 79px;
 
 .yellowbox1{
     width: 370px;
@@ -235,6 +279,13 @@ justify-content: space-between;
 
 
 }
+.bottom{
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 
 .le_icon{
     width: 50px;
@@ -242,9 +293,12 @@ justify-content: space-between;
     border-radius: 25px;
     background-color: $font-colorg3;
     text-align: center;
+    margin-right: 7px;
 
         li{
+            padding: 5px;
             .fa-solid{
+                align-items: center;
                 &::before{
                     font-family: "FontAwesome";
                     content: "\f104";
@@ -252,14 +306,14 @@ justify-content: space-between;
                     font-size: 3rem;
 
                     &::before:hover{
-                        color: $font-colorg1;
+                        color: $font-colorg3;
                 }
             }
             }
         }
         
             &:hover{
-                background-color: $font-Y1;
+                background-color: #C0C0C0;
             }
     }
 
@@ -272,6 +326,7 @@ justify-content: space-between;
     background-color: $font-Y3;
     border-radius: 25px;
     text-align: center;
+    margin-right: 7px;
     a{    
     font-size: 20px;
     font-family: 'S-CoreDream-5Medium';
@@ -292,6 +347,7 @@ justify-content: space-between;
     background-color: $font-Y3;
     border-radius: 25px;
     text-align: center;
+    margin-right: 7px;
     a{    
     font-size: 20px;
     font-family: 'S-CoreDream-5Medium';
@@ -312,6 +368,8 @@ justify-content: space-between;
     background-color: $font-Y3;
     border-radius: 25px;
     text-align: center;
+    margin-right: 7px;
+    
     a{    
     font-size: 20px;
     font-family: 'S-CoreDream-5Medium';
@@ -322,4 +380,34 @@ justify-content: space-between;
     }
     }
     &:hover{background-color: $font-Y2;}
+}
+.le_icon2{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: $font-colorg3;
+    text-align: center;
+    margin-right: 7px;
+
+        li{
+            padding: 5px;
+            .fa-solid{
+                &::before{
+                    font-family: "FontAwesome";
+                    content: "\f105";
+                    color: $font-colorg2;
+                    font-size: 3rem;
+
+                    &::before:hover{
+                        color: $font-colorg3;
+                }
+            }
+            }
+        }
+        
+            &:hover{
+                background-color: #C0C0C0;
+            }
+    }
+}
 }

@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UhBeeZZIBA-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+html,
+body {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .hd {
+  padding: 30px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFEAB5;
+}
+header .hd h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+header .hd h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+header .hd nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav {
+  display: flex;
+}
+header .hd nav .sub-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(3) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(4) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li .sub-burger {
+  display: none;
+  margin-top: 40px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(1) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(2) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(3) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(4) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd .small-nav a:nth-of-type(1) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd .small-nav a:nth-of-type(2) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header a:hover {
+  color: #FC9803;
+}
+
+footer {
+  padding: 30px 50px;
+  background-color: #FFDD85;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .logobox h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+footer .logobox h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+footer .hd-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .hd-nav ul li {
+  text-align: center;
+}
+footer .hd-nav ul li a {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+footer .hd-nav ul li div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+footer .hd-nav ul li div a {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+  color: #746454;
+  margin: 10px 0;
+}
+footer .copy {
+  width: 100%;
+}
+footer a:hover {
+  color: #FC9803;
+}
+footer ul li div a:hover {
+  color: #FC9803;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-family: "S-CoreDream-5Medium";
+}
+
+main .icon {
+  display: flex;
+  text-align: center;
+}
+main .icon .insta {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FFDD85;
+  margin-left: 1563px;
+  margin-right: 7px;
+  padding: 6px;
+}
+main .icon .facebook {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FFDD85;
+  margin-right: 7px;
+  padding: 7px;
+}
+main .icon .chat {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FFDD85;
+  margin-right: 7px;
+  padding: 7px;
+}
+main .icon .share {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FFDD85;
+  padding: 5px;
+}/*# sourceMappingURL=adopt_03_review.css.map */

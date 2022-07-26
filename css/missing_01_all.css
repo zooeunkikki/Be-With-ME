@@ -282,24 +282,54 @@ main .icon .share {
   background-color: #FFDD85;
   padding: 5px;
 }
-main .adopt-animal h2 {
+main .missing_animal {
+  padding-bottom: 46px;
+}
+main .missing_animal h2 {
   color: #444;
   font-size: 50px;
   margin: 0 auto;
   text-align: center;
   font-family: "S-CoreDream-6Bold";
 }
-main .adopt-animal p {
+main .missing_animal p {
   color: #8E8E8E;
   font-size: 25px;
   text-align: center;
   font-family: "S-CoreDream-3Light";
+}
+main .enroll {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 67px;
+}
+main .enroll .yellow1 {
+  display: flex;
+  width: 222px;
+  height: 59px;
+  border-radius: 25px;
+  background-color: #FFD231;
+  align-items: center;
+  justify-content: center;
+}
+main .enroll .yellow1 p {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 26px;
+  padding-right: 5px;
+  color: #fff;
+}
+main .enroll .yellow1 .fa-solid {
+  font-family: "FontAwesome";
+  content: "\f15c";
+  color: #fff;
+  font-size: 3rem;
 }
 main .sort {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-top: 35px;
+  margin-bottom: 93px;
 }
 main .sort div {
   margin-right: 42px;
@@ -401,225 +431,4 @@ main .sort .s4 ul li:nth-of-type(1) a {
 }
 main .sort .s4 ul li {
   margin: 0 auto;
-}
-main .picture {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 79px;
-}
-main .picture .yellowbox1 {
-  width: 370px;
-  height: 424.2px;
-  margin-top: 103px;
-  margin-left: 162px;
-  background-color: #FFEAB5;
-  border-radius: 25px;
-}
-main .picture .yellowbox1 li {
-  text-align: center;
-}
-main .picture .yellowbox1 li h6 {
-  margin: 0 auto;
-  padding-top: 19px;
-  padding-bottom: 13px;
-  font-size: 20px;
-  color: #444;
-}
-main .picture .yellowbox1 li a {
-  font-size: 15px;
-  margin-top: 34px;
-  color: #8E8E8E;
-  font-family: "S-CoreDream-3Light";
-}
-main .picture .yellowbox2 {
-  width: 370px;
-  height: 424.2px;
-  margin-top: 103px;
-  margin-left: 39px;
-  background-color: #FFEAB5;
-  border-radius: 25px;
-}
-main .picture .yellowbox2 li {
-  text-align: center;
-}
-main .picture .yellowbox2 li h6 {
-  margin: 0 auto;
-  padding-top: 19px;
-  padding-bottom: 13px;
-  font-size: 20px;
-  color: #444;
-}
-main .picture .yellowbox2 li a {
-  font-size: 15px;
-  margin-top: 34px;
-  color: #8E8E8E;
-  font-family: "S-CoreDream-3Light";
-}
-main .picture .yellowbox3 {
-  width: 370px;
-  height: 424.2px;
-  margin-top: 103px;
-  margin-left: 39px;
-  background-color: #FFEAB5;
-  border-radius: 25px;
-}
-main .picture .yellowbox3 li {
-  text-align: center;
-}
-main .picture .yellowbox3 li h6 {
-  margin: 0 auto;
-  padding-top: 19px;
-  padding-bottom: 13px;
-  font-size: 20px;
-  color: #444;
-}
-main .picture .yellowbox3 li a {
-  font-size: 15px;
-  margin-top: 34px;
-  color: #8E8E8E;
-  font-family: "S-CoreDream-3Light";
-}
-main .picture .yellowbox4 {
-  width: 370px;
-  height: 424.2px;
-  margin-top: 103px;
-  margin-left: 39px;
-  margin-right: 162px;
-  background-color: #FFEAB5;
-  border-radius: 25px;
-}
-main .picture .yellowbox4 li {
-  text-align: center;
-}
-main .picture .yellowbox4 li h6 {
-  margin: 0 auto;
-  padding-top: 19px;
-  padding-bottom: 13px;
-  font-size: 20px;
-  color: #444;
-}
-main .picture .yellowbox4 li a {
-  font-size: 15px;
-  margin-top: 34px;
-  color: #8E8E8E;
-  font-family: "S-CoreDream-3Light";
-}
-main .bottom {
-  padding-bottom: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .bottom .le_icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #D9D9D9;
-  text-align: center;
-  margin-right: 7px;
-}
-main .bottom .le_icon li {
-  padding: 5px;
-}
-main .bottom .le_icon li .fa-solid {
-  align-items: center;
-}
-main .bottom .le_icon li .fa-solid::before {
-  font-family: "FontAwesome";
-  content: "\f104";
-  color: #8E8E8E;
-  font-size: 3rem;
-}
-main .bottom .le_icon li .fa-solid::before::before:hover {
-  color: #D9D9D9;
-}
-main .bottom .le_icon:hover {
-  background-color: #C0C0C0;
-}
-main .bottom .num1 {
-  display: inline-block;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: #FFDD85;
-  border-radius: 25px;
-  text-align: center;
-  margin-right: 7px;
-}
-main .bottom .num1 a {
-  font-size: 20px;
-  font-family: "S-CoreDream-5Medium";
-  color: #8E8E8E;
-}
-main .bottom .num1 a:hover {
-  color: #444;
-}
-main .bottom .num1:hover {
-  background-color: #FFD231;
-}
-main .bottom .num2 {
-  display: inline-block;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: #FFDD85;
-  border-radius: 25px;
-  text-align: center;
-  margin-right: 7px;
-}
-main .bottom .num2 a {
-  font-size: 20px;
-  font-family: "S-CoreDream-5Medium";
-  color: #8E8E8E;
-}
-main .bottom .num2 a:hover {
-  color: #444;
-}
-main .bottom .num2:hover {
-  background-color: #FFD231;
-}
-main .bottom .num3 {
-  display: inline-block;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: #FFDD85;
-  border-radius: 25px;
-  text-align: center;
-  margin-right: 7px;
-}
-main .bottom .num3 a {
-  font-size: 20px;
-  font-family: "S-CoreDream-5Medium";
-  color: #8E8E8E;
-}
-main .bottom .num3 a:hover {
-  color: #444;
-}
-main .bottom .num3:hover {
-  background-color: #FFD231;
-}
-main .bottom .le_icon2 {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #D9D9D9;
-  text-align: center;
-  margin-right: 7px;
-}
-main .bottom .le_icon2 li {
-  padding: 5px;
-}
-main .bottom .le_icon2 li .fa-solid::before {
-  font-family: "FontAwesome";
-  content: "\f105";
-  color: #8E8E8E;
-  font-size: 3rem;
-}
-main .bottom .le_icon2 li .fa-solid::before::before:hover {
-  color: #D9D9D9;
-}
-main .bottom .le_icon2:hover {
-  background-color: #C0C0C0;
-}/*# sourceMappingURL=adopt_01_all.css.map */
+}/*# sourceMappingURL=missing_01_all.css.map */
