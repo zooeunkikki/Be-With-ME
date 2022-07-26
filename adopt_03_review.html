@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be With Me</title>
+    <link href="./css/missing_01_all.css" rel="stylesheet">
+    <!-- font-Awesome -->
+    <script defer src="https://kit.fontawesome.com/09be1ef41e.js" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hd">
+            <h2><a href="#"></a></h2>
+
+            <nav>
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href="#">실종 · 보호</a>
+                            <div class="sub-burger">
+                                <ul>
+                                    <li>
+                                        <a href="#">실종</a>
+                                        <a href="#">보호</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">입양</a>
+                            <div class="sub-burger">
+                                <ul>
+                                    <li>
+                                        <a href="#">입양하기</a>
+                                        <a href="#">입양안내</a>
+                                        <a href="#">입양후기</a>
+                                        <a href="#">입양센터</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">정보 · 소식</a>
+                            <div class="sub-burger">
+                                <ul>
+                                    <li>
+                                        <a href="#">공지사항</a>
+                                        <a href="#">FAQ</a>
+                                        <a href="#">목격담</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="small-nav">
+                <a href="#">로그인</a>
+                <a href="#">관심</a>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+
+    <main>
+        <div class="main_p">
+            <img src="./img/missing_1.png">
+        </div>
+
+        <div class="icon">
+            <dlv class="insta">
+                <a href="#"><img src="img/logo/Instagram.png"></a>
+            </dlv>
+
+            <dlv class="facebook">
+                <a href="#"><img src="img/logo/Facebook F.png"></a>
+            </dlv>
+
+            <dlv class="chat">
+                <a href="#"><img src="img/logo/Chat.png"></a>
+            </dlv>
+
+            <dlv class="share">
+                <a href="#"><img src="img/logo/Share.png"></a>
+            </dlv>
+
+        </div>
+
+        <div class="missing_animal">
+            <h2>입양 후기</h2>
+            <p>새로운 가족을 만난 친구들의 이야기들입니다. </p>
+        </div>
+
+    <table class="center">
+        <iframe
+            id="ifr"
+            src="http://tlsthwjd7.dothome.co.kr/bbs/board.php?bo_table=review" 
+            width="800" height="1000" frameborder="no" scrolling="no">
+        </iframe>
+    </table>
+    
+    <script>
+        window.addEventListener('load',function(){
+            
+            let h= document.body.scrollHeight;
+            let w= document.body.scrollWidth;
+            window.parent.postMessage({width:w, height:h},"*");
+            
+        });
+    
+    
+        window.addEventListener('message',function(e){
+            console.log( e.data.height );
+            ifr.style.height=`${e.data.height + 50}px`;
+        });
+    
+    </script>
+
+
+    </main>
+
+    <footer>
+        <div class="logobox">
+            <h2><a href="#">Be With ME</a></h2>
+        </div>
+
+        <div class="hd-nav">
+            <ul>
+                <li><a href="#">플랫폼 소개</a></li>
+                <li><a href="#">실종 · 보호</a>
+                    <div>
+                        <a>실종</a>
+                        <a>보호</a>
+                    </div>
+                </li>
+
+                </li>
+                <li><a href="#">입양</a>
+                    <div>
+                        <a href="#">입양 하기</a>
+                        <a href="#">입양 안내</a>
+                        <a href="#">입양 후기</a>
+                        <a href="#">입양 센터</a>
+                    </div>
+                </li>
+                <li><a href="#">정보 · 소식</a>
+                    <div>
+                        <a href="#">공지사항</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">목격담</a>
+                    </div>
+                </li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+        </div>
+
+        <div class="copy">
+            <p>이용약관 | 개인정보취급방침</p>
+            <a>사이트문의 : bewithme@gmail.com</a>
+            <p>Copyright ©2019 BEWITHME All rights reserved.</p>
+        </div>
+
+
+    </footer>
+    </body>
+
+</html>
