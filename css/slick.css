@@ -1,0 +1,91 @@
+.slide{
+    width:100%;
+    margin:0 auto;
+
+    /* 고정값 */
+    position: relative;            
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+.slide .slick-list{  
+    /* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+.slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트) */
+}
+.slide .slick-track::after{
+   content:'';
+   display:block;
+   clear: both;
+}
+.slide .slick-slide{
+    /* 개별 배너 */
+    margin:0; 
+    width:100%;
+    float:left;
+}
+
+.slide .slick-slide  img{width:100%;}
+
+/* next prev */           
+.slide .slick-prev{
+    position: absolute;
+    left:2%; top:50%;
+    z-index: 2;
+    font-size: 0;
+    border: transparent;
+    border-radius: 100px;
+    width: 50px; height: 50px;
+    text-align: center;
+    background: url('../img/icon/arrow_gray.png')center/ 70% no-repeat;
+    transform: rotate(180deg);
+    background-color: rgba(240, 248, 255, 0.5);
+}
+.slide .slick-next{
+    position: absolute;
+    right:2%; top:50%;
+    z-index: 2;
+    font-size: 0;
+    border: transparent;
+    border-radius: 100px;
+    width: 50px; height: 50px;
+    text-align: center;
+    background: url('../img/icon/arrow_gray.png')center/ 70% no-repeat;
+    background-color: rgba(240, 248, 255, 0.5);
+}
+
+
+/* dots */
+.slide .slick-dots{
+    position: absolute;
+    left:0; bottom:5%;
+    width:100%;
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+    display: flex !important;
+    justify-content: center;
+}
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    padding: 0;
+    width:15px; height:15px;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    border:none;
+    font-size:0;
+    margin:0 10px;
+    transition: linear;
+}
+.slide .slick-dots li.slick-active button{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    /* background-color: #fc98036e; */
+    border: 3px solid #fc98036e !important;
+    background: transparent;
+    
+}

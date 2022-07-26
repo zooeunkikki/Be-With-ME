@@ -239,41 +239,43 @@ footer ul li div a:hover {
 }
 
 main {
-  margin: 100px auto 0;
+  margin: 0 auto;
 }
-main .slide ul li {
+main .slide-div .slide li {
   position: relative;
-  width: 100%;
+  width: 2%;
 }
-main .slide ul li p {
+main .slide-div .slide li p {
   display: inline-block;
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.8);
   vertical-align: top;
 }
-main .slide ul li p img {
+main .slide-div .slide li p img {
   width: 100%;
   opacity: 0.6;
   vertical-align: top;
 }
-main .slide ul li .slide-txt {
+main .slide-div .slide li .slide-txt {
   position: absolute;
   left: 40%;
   top: 30%;
   text-align: center;
+  transform: translateX(3%);
 }
-main .slide ul li .slide-txt h2 {
+main .slide-div .slide li .slide-txt h2 {
   font-family: "S-CoreDream-5Medium";
   font-size: 2rem;
   white-space: pre-line;
+  color: #D9D9D9;
 }
-main .slide ul li .slide-txt a {
+main .slide-div .slide li .slide-txt a {
   font-family: "S-CoreDream-3Light";
   font-size: 1.5rem;
   color: #D9D9D9;
 }
-main .slide ul li .slide-txt a::before {
+main .slide-div .slide li .slide-txt a::before {
   content: "";
   display: block;
   width: 40%;
@@ -281,7 +283,7 @@ main .slide ul li .slide-txt a::before {
   border-top: 1px solid #D9D9D9;
   padding-top: 10px;
 }
-main .slide ul li .slide-txt a::after {
+main .slide-div .slide li .slide-txt a::after {
   display: inline-block;
   font-family: "FontAwesome";
   content: "\f054";
@@ -312,46 +314,45 @@ main .adopt .adopt-slide .rotate-circle {
 }
 main .adopt .adopt-slide .rotate-circle .rotate {
   display: block;
-}
-main .adopt .adopt-slide .rotate-circle .rotate ul {
   position: relative;
-  width: 100%;
-  height: 50%;
-  border: 3px solid #FC9803;
+  width: 700px;
+  height: 700px;
+  border: 5px solid #FC9803;
   border-radius: 50%;
   transform: rotate(0deg);
 }
+main .adopt .adopt-slide .rotate-circle .rotate ul {
+  position: relative;
+}
 main .adopt .adopt-slide .rotate-circle .rotate ul li {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
 }
 main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon {
-  display: block;
-  position: relative;
+  display: inline-block;
   text-align: center;
   margin: 0;
-  width: 20%;
-  height: 20%;
-  padding: 2% 3%;
+  width: 150px;
   background-color: #FFF3DB;
-  border-radius: 100%;
+  border-radius: 100px;
   transition: 0.3s ease;
 }
 main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(1) {
   margin: 0 auto;
-  padding: 0;
-  width: 80%;
-  height: 7vh;
+  padding: 30px 10px 20px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
   vertical-align: top;
 }
 main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(1) img {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   vertical-align: top;
 }
 main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(2) {
   margin: 0;
-  margin-top: 10px;
+  margin-bottom: 24px;
   padding: 0;
   font-family: "S-CoreDream-5Medium";
   font-size: 1.2rem;
@@ -373,19 +374,33 @@ main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon:hover::before 
   color: #444;
   font-size: 2rem;
 }
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(1) .slide-icon {
+  transform: translate(-30px, -10px);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(2) .slide-icon {
+  transform: translateX(50px);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(3) .slide-icon {
+  transform: translate(50px, 30px);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(4) .slide-icon {
+  transform: translate(-30px, 50px);
+}
 main .adopt .adopt-slide .rotate-circle .circle {
   position: absolute;
-  left: 20%;
-  top: 20%;
+  left: 10%;
+  top: 15%;
+  transform: translateX(4%);
   display: inline-block;
   font-size: 0;
   padding: 0;
   margin: 0;
-  width: 60%;
-  height: 60%;
+  width: 500px;
+  height: 500px;
   background: #FFDD85;
   box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.2);
   border-radius: 100%;
+  z-index: -1;
 }
 main .adopt .adopt-slide .adopt-Ri-txt {
   position: relative;
@@ -486,6 +501,36 @@ main .find .dog-find ul li .li-txt p {
   font-family: "S-CoreDream-4Regular";
   font-size: 1.5rem;
 }
+main .find .dog-find .findA-txt .dog {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+main .find .dog-find .findA-txt .dog p {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+main .find .dog-find .findA-txt .dog p img {
+  width: 100%;
+  vertical-align: top;
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(1) {
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(1):hover {
+  transform: rotate(45deg);
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(2) {
+  display: inline-block;
+  width: 100px;
+  color: #FC9803;
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(2) img {
+  width: 100%;
+  vertical-align: top;
+}
 main .find .dog-find .findA-txt h3 {
   font-family: "S-CoreDream-3Light";
   font-size: 2.15rem;
@@ -509,9 +554,15 @@ main .find .dog-find .findA-txt a {
 main .find .dog-find .findA-txt a::after {
   font-family: "FontAwesome";
   content: "+";
+  display: inline-block;
   margin: 0;
-  padding-left: 20px;
+  margin-left: 20px;
   color: #FC9803;
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .dog-find .findA-txt a:hover::after {
+  transform: rotate(180deg);
 }
 main .find .cat-find {
   margin-top: 70px;
@@ -520,6 +571,28 @@ main .find .cat-find {
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
+}
+main .find .cat-find .findB-txt .cat {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+main .find .cat-find .findB-txt .cat p {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+main .find .cat-find .findB-txt .cat p img {
+  width: 100%;
+  vertical-align: top;
+}
+main .find .cat-find .findB-txt .cat p:nth-of-type(2) {
+  width: 50px;
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .cat-find .findB-txt .cat p:nth-of-type(2):hover {
+  transform: rotate(-45deg);
 }
 main .find .cat-find .findB-txt h3 {
   font-family: "S-CoreDream-3Light";
@@ -542,11 +615,17 @@ main .find .cat-find .findB-txt a {
   color: #444;
 }
 main .find .cat-find .findB-txt a::after {
+  display: inline-block;
   font-family: "FontAwesome";
   content: "+";
   margin: 0;
-  padding-left: 20px;
+  margin-left: 20px;
   color: #FC9803;
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .cat-find .findB-txt a:hover::after {
+  transform: rotate(180deg);
 }
 main .find .cat-find ul {
   display: flex;

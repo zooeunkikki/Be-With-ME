@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "S-CoreDream-3Light";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
@@ -237,245 +238,85 @@ footer ul li div a:hover {
   color: #FC9803;
 }
 
-body {
-  counter-reset: count;
-}
-
-main .vanner p {
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  background-color: rgba(255, 224, 190, 0.8);
-}
-main .vanner p img {
-  vertical-align: top;
+.login {
   width: 100%;
-  opacity: 0.6;
-}
-main .adpot {
-  text-align: center;
-}
-main .adpot hgroup {
-  margin-top: 70px;
-}
-main .adpot hgroup h2 {
-  font-family: "S-CoreDream-6Bold";
-  padding: 0;
-  margin: 0px;
-  font-size: 2.5rem;
-}
-main .adpot hgroup h4 {
-  margin: 0;
-  margin-top: 20px;
-  font-family: "S-CoreDream-3Light";
-  font-weight: 300;
-  font-size: 1.3rem;
-  white-space: pre-line;
-  color: #8E8E8E;
-}
-main .process {
-  width: 80%;
   margin: 0 auto;
-  margin-top: 80px;
-}
-main .process .pro-box h4 {
-  font-family: "S-CoreDream-5Medium";
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-main .process .pro-box ul {
-  margin-top: 50px;
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
 }
-main .process .pro-box ul li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 30px 50px;
-  width: 45%;
-  background-color: #FFF3DB;
-  border-radius: 30px;
-  margin-bottom: 100px;
-  overflow: hidden;
+.login .left {
+  margin-right: 30px;
 }
-main .process .pro-box ul li .li-img {
-  width: 35%;
+.login .left .logo h2 {
+  margin: 20px 0;
 }
-main .process .pro-box ul li .li-img p {
+.login .left .logo h2 a {
   display: inline-block;
+  font-size: 0;
   width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #FFF;
-  border-radius: 200px;
-  vertical-align: top;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
 }
-main .process .pro-box ul li .li-img p img {
-  width: 70%;
-  height: 100%;
-  padding: 30px;
-  margin: 0 30px;
-  vertical-align: top;
-}
-main .process .pro-box ul li .li-txt {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-main .process .pro-box ul li .li-txt p {
-  font-family: "S-CoreDream-3Light";
-  font-size: 1rem;
-}
-main .process .pro-box ul li .li-txt p span {
-  font-family: "S-CoreDream-3Light";
-  color: #8E8E8E;
-}
-main .process .pro-box ul li::before {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  text-align: center;
-  counter-increment: count;
-  content: "" counter(count, decimal-leading-zero) "";
-  display: block;
-  width: 80px;
-  height: 50px;
-  background-color: #FFEAB5;
-  border-radius: 0px 0px 20px 20px;
-  font-family: "S-CoreDream-5Medium";
-  color: #444;
-  font-weight: bold;
-  font-size: 2rem;
+.login .left .btn p {
   margin: 0;
-  padding-top: 10px;
+  margin-top: 10px;
 }
-main .process .pro-box ul li:hover::before {
-  color: #FC9803;
-}
-main .caution {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-main .caution h4 {
-  font-family: "S-CoreDream-5Medium";
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-main .caution h4::before {
-  font-family: "FontAwesome";
-  content: "\f06a";
-  margin: 0;
-  padding-right: 20px;
-  color: #FFD231;
-}
-main .caution .txt-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 30px;
-  border: 5px solid #FFD231;
-  border-radius: 30px;
-  padding: 30px 60px;
-}
-main .caution .txt-box .pa-wang p {
-  display: inline-block;
-  margin: 0;
-  padding: 50px;
-  background-color: #FFF3DB;
-  border-radius: 30px;
+.login .left .btn p input {
   width: 310px;
+  padding: 10px 7px;
+  font-family: "S-CoreDream-4Regular";
+  border-radius: 5px;
+  border: 1px solid #8E8E8E;
+}
+.login .left .checkbox {
+  display: flex;
+  font-family: "S-CoreDream-4Regular";
+}
+.login .left button {
+  width: 310px;
+  height: 50px;
+  background-color: #FFDD85;
+  border: transparent;
+  border-radius: 5px;
   text-align: center;
   font-family: "S-CoreDream-5Medium";
-  font-size: 1.5rem;
-  white-space: pre-line;
+  font-size: 1.2rem;
 }
-main .caution .txt-box .pa-wang p b {
-  font-family: "S-CoreDream-6Bold";
-  font-size: 1.8rem;
-  color: #DA3232;
-}
-main .caution .txt-box .pa-wang::after {
-  content: "";
-  display: inline-block;
-  width: 2px;
-  height: 110px;
-  padding: 20px;
-  border-right: 2px solid #FFD231;
-  margin: 0 20px;
-  transform: translate(50px, 30px);
-}
-main .caution .txt-box .ol-txt {
-  width: 65%;
-}
-main .caution .txt-box .ol-txt ol {
-  list-style-type: decimal !important;
-  padding: 0 150px 0 20px;
-}
-main .caution .txt-box .ol-txt ol li {
-  list-style-type: decimal !important;
-}
-main .caution .txt-box .ol-txt ol li p {
-  font-family: "S-CoreDream-4Regular";
-}
-main .caution .txt-box .youknow {
-  margin-top: 70px;
+.login .left .sns-btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 2px solid #FFD231;
+  justify-content: space-evenly;
 }
-main .caution .txt-box .youknow .know-img p {
-  width: 200px;
-  background-color: #FFF3DB;
-  border-radius: 100px;
+.login .left .sns-btn a {
+  display: inline-block;
+  font-family: "S-CoreDream-4Regular";
+  width: 100px;
+  height: 50px;
+  padding: 60px 0 0;
+}
+.login .left .sns-btn a:nth-of-type(1) {
+  background: url("../img/login/naver_logo_icon.png") 50% 0%/50% no-repeat;
+}
+.login .left .sns-btn a:nth-of-type(2) {
+  background: url("../img/login/kakao_logo_icon.png") 50% 0%/50% no-repeat;
+}
+.login .left::after {
+  content: "SNS계정으로 간편 로그인/회원가입";
+  display: block;
+  border-top: 1px solid #8E8E8E;
+  transform: translateY(35px);
+  width: 80%;
+  margin: 0px auto 10px;
+}
+.login .right p {
   margin: 0;
   padding: 0;
   vertical-align: top;
 }
-main .caution .txt-box .youknow .know-img p img {
-  padding: 30px;
+.login .right p img {
   width: 100%;
   vertical-align: top;
-}
-main .caution .txt-box .youknow .know-txt {
-  width: 50%;
-  padding: 20px;
-}
-main .caution .txt-box .youknow .know-txt p {
-  font-family: "S-CoreDream-4Regular";
-}
-main .caution .txt-box .petlist-btn a {
-  display: inline-block;
-  padding: 10px 40px;
-  background-color: #FFF3DB;
-  border-radius: 100px;
-  font-family: "S-CoreDream-4Regular";
-}
-main .caution .txt-box .petlist-btn a::after {
-  display: inline-block;
-  font-family: "FontAwesome";
-  content: "\f054";
-  margin: 0;
-  padding-left: 20px;
-}
-main .pro-vanner {
-  margin-top: 250px;
-}
-main .pro-vanner p {
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-}
-main .pro-vanner p img {
-  width: 100%;
-  vertical-align: top;
-}/*# sourceMappingURL=adopt_02_process.css.map */
+}/*# sourceMappingURL=login.css.map */

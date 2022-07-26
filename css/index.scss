@@ -2,13 +2,14 @@
 
 
 main {
-    margin: 100px auto 0;
+    margin: 0 auto ;
 
-    .slide {
-        ul {
+    .slide-div {
+        .slide {
             li {
+
                 position: relative;
-                width: 100%;
+                width: 2%;
 
                 p {
                     display: inline-block;
@@ -29,11 +30,13 @@ main {
                     left: 40%;
                     top: 30%;
                     text-align: center;
+                    transform: translateX(3%);
 
                     h2 {
                         font-family: 'S-CoreDream-5Medium';
                         font-size: 2rem;
                         white-space: pre-line;
+                        color: $font-colorg3;
                     }
 
                     a {
@@ -60,6 +63,7 @@ main {
 
                     }
                 }
+
             }
         }
     }
@@ -87,44 +91,42 @@ main {
             width: 40%;
             .rotate{
                 display: block;
+                position: relative;
+                width: 700px;
+                height:700px;
+                border: 5px solid $font-Y1;
+                border-radius: 50%;
+                transform: rotate(0deg);
                 ul{
                     position: relative;
-                    width: 100%;
-                    height: 50%;
-                    border: 3px solid $font-Y1;
-                    border-radius: 50%;
-                    transform: rotate(0deg);
 
                     li{
-                        display: block;
-
+                        display: flex;
+                        justify-content: flex-end;
                         .slide-icon{
-                            display: block;
-                            position: relative;
+                            display: inline-block;
                             text-align: center;
                             margin: 0;
-                            width: 20%;
-                            height: 20%;
-                            padding: 2% 3%;
+                            width: 150px;
                             background-color: $font-Y5;
-                            border-radius: 100%;
+                            border-radius: 100px;
                             transition: 0.3s ease;
                             p:nth-of-type(1){
                                 margin: 0 auto;
-                                padding: 0;
-                                width: 80%;
-                                height: 7vh;
+                                padding: 30px 10px 20px;
+                                width: 100px;
+                                height: 100px;
                                 overflow: hidden;
                                 vertical-align: top;
                                 img{
                                     width: 100%;
-                                    height: 100%;
+                                    max-height: 100%;
                                     vertical-align: top;
                                 }
                             }
                             p:nth-of-type(2){
                                 margin: 0;
-                                margin-top: 10px;
+                                margin-bottom: 24px;
                                 padding: 0;
                                 font-family: 'S-CoreDream-5Medium';
                                 font-size: 1.2rem;
@@ -150,22 +152,50 @@ main {
                             }
                         }
                         span{}
+                        &:nth-of-type(1){
+                            .slide-icon{
+    
+                                transform: translate(-30px,-10px);
+                            }
+                        }
+    
+                        &:nth-of-type(2){
+                            .slide-icon{
+                                transform: translateX(50px);
+                            }
+                        }
+
+                        &:nth-of-type(3){
+                            .slide-icon{
+                                transform: translate(50px,30px);
+                            }
+                        }
+
+                        &:nth-of-type(4){
+                            .slide-icon{
+                                transform: translate(-30px,50px);
+                            }
+                        }
                     }
+
+
                 }
             }
 
             .circle{
                 position: absolute;
-                left: 20%; top: 20%;
+                left: 10%; top: 15%;
+                transform: translateX(4%);
                     display: inline-block;
                     font-size: 0;
                     padding: 0;
                     margin: 0;
-                    width: 60%;
-                    height: 60%;
+                    width: 500px;
+                    height: 500px;
                     background: #FFDD85;
                     box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.2);
                     border-radius: 100%;
+                    z-index: -1;
 
             }
         }
@@ -285,6 +315,40 @@ main {
                 }
             }
             .findA-txt{
+                .dog{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    p{
+                        display: inline-block;
+                        width: 50px;
+                        vertical-align: top;
+                    
+                        img{
+                            width: 100%;
+                            vertical-align: top;
+                        }
+
+                        &:nth-of-type(1){
+                            transition: 0.3s ease;
+                            transform: rotate(0deg);
+                            &:hover{
+                                transform: rotate(45deg);
+                            }
+                        }
+                        &:nth-of-type(2){
+                            display: inline-block;
+                            width: 100px;
+                            img{
+                                width: 100%;
+                                vertical-align: top;
+                            }
+                            color: $font-Y1;
+                            
+                        }
+                        
+                    }
+                }
                 h3{
                     font-family: 'S-CoreDream-3Light';
                     font-size: 2.15rem;
@@ -305,12 +369,20 @@ main {
                     text-align: right;
                     color: $font-colorg1;
 
+
                     &::after{
                         font-family: "FontAwesome";
                         content: "\2b";
+                        display: inline-block;
                         margin: 0;
-                        padding-left: 20px;
+                        margin-left: 20px;
                         color: $font-Y1;
+                        transition: 0.3s ease;
+                        transform: rotate(0deg);
+                    }
+
+                    &:hover::after{
+                        transform: rotate(180deg);
                     }
                 }
             }
@@ -323,7 +395,30 @@ main {
             align-items: center;
             justify-content: space-evenly;
             margin: $pageMargin;
+
             .findB-txt{
+                .cat{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    p{
+                        display: inline-block;
+                        width: 100px;
+                        vertical-align: top;
+                        img{
+                            width: 100%;
+                            vertical-align: top;
+                        }
+                        &:nth-of-type(2){
+                            width: 50px;
+                            transition: 0.3s ease;
+                            transform: rotate(0deg);
+                            &:hover{
+                                transform: rotate(-45deg);
+                            }
+                        }
+                    }
+                }
                 h3{
                     font-family: 'S-CoreDream-3Light';
                     font-size: 2.15rem;
@@ -345,11 +440,18 @@ main {
                     color: $font-colorg1;
 
                     &::after{
+                        display: inline-block;
                         font-family: "FontAwesome";
                         content: "\2b";
                         margin: 0;
-                        padding-left: 20px;
+                        margin-left: 20px;
                         color: $font-Y1;
+                        transition: 0.3s ease;
+                        transform: rotate(0deg);
+
+                    }
+                    &:hover::after{
+                        transform: rotate(180deg);
                     }
                 }
             }

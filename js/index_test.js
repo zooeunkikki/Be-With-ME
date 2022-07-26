@@ -21,7 +21,6 @@ queryParams += '&numOfRows=' + 3; /*몇개 띄울건지*/
 queryParams += '&_type=json'; /*json & xml*/
 
 
-
 xhr.open('GET', url + queryParams);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4) {
@@ -29,7 +28,7 @@ xhr.onreadystatechange = function () {
         let tags;
         let data = this.responseText;  // API
         data = JSON.parse(data)   // API - json으로 바꿔주는 역할
-        data = data.response.body.items.item; 
+        data = data.response.body.items.item;
         console.log(data)
         
         function dogFind(){
@@ -48,25 +47,26 @@ xhr.onreadystatechange = function () {
                 list += vlaue;
             });
             Box.innerHTML = list;
-            dogFindTxt();
+            // dogFindTxt();
         }
-        function dogFindTxt(){
-            list = '';
-            tags = [];
-            let txtBox = document.querySelectorAll('.find .dog-find .li-txt');
+        // function dogFindTxt(){
+        //     list = '';
+        //     tags = [];
+        //     let txtBox = document.querySelectorAll('.find .dog-find .li-txt');
 
 
-            txtBox.forEach(function(value,k){
-                txtBox[k].innerHTML= tags.push(`<div>
-                        <p>${value.age}</p>     
-                        <p>${value.weight}</p>           
-                        <p>${value.specialMark}</p>
-                    </div>`
-                    );
-                    txtBox.innerHTML = tags;
-            });
+        //     txtBox.forEach(function(value,k){
                 
-        }
+        //         txtBox[k].innerHTML= tags.push(`<div>
+        //                 <p>${value.age}</p>     
+        //                 <p>${value.weight}</p>           
+        //                 <p>${value.specialMark}</p>
+        //             </div>`
+        //             );
+        //             txtBox.innerHTML = tags;
+        //     });
+                
+        // }
 
     dogFind();
     }

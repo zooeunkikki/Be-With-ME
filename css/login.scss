@@ -1,0 +1,101 @@
+@import "_common";
+
+
+.login {
+    width: $pagrWidth;
+    margin: $pageMargin;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .left {
+        margin-right: 30px;
+        .logo {
+            h2 {
+                margin: 20px 0;
+                a {
+                    display: inline-block;
+                    font-size: 0;
+                    width: 200px;
+                    height: 30px;
+                    background: url('../img/logo/bewithme_logo_b.png')0%0% /cover no-repeat;
+                }
+            }
+        }
+        .btn {
+            p {
+                margin: 0;
+                margin-top: 10px;
+                input {
+                    width: 310px;
+                    padding: 10px 7px;
+                    font-family: 'S-CoreDream-4Regular';
+                    border-radius: 5px;
+                    border: 1px solid $font-colorg2;
+                }
+            }
+        }
+
+        .checkbox {
+            display: flex;
+            font-family: 'S-CoreDream-4Regular';
+        }
+
+        button {
+            width: 310px;
+            height: 50px;
+            background-color: $font-Y3;
+            border: transparent;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'S-CoreDream-5Medium';
+            font-size: 1.2rem;
+        }
+
+        .sns-btn {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+                display: inline-block;
+                font-family: 'S-CoreDream-4Regular';
+                width: 100px;
+                height: 50px;
+                padding: 60px 0 0;
+
+                &:nth-of-type(1) {
+                    background: url('../img/login/naver_logo_icon.png')50%0% /50% no-repeat;
+                }
+
+                &:nth-of-type(2) {
+                    background: url('../img/login/kakao_logo_icon.png')50%0% /50% no-repeat;
+
+                }
+            }
+        }
+        &::after{
+            content: "SNS계정으로 간편 로그인/회원가입";
+            display: block;
+            border-top: 1px solid $font-colorg2;
+            transform: translateY(35px);
+            width: 80%;
+            margin: 0px auto 10px;
+        }
+    }
+
+    .right {
+        p {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+
+            img {
+                width: 100%;
+                vertical-align: top;
+            }
+        }
+    }
+}

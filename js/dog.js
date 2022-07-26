@@ -9,7 +9,7 @@ var url = public; /*URL*/
 var queryParams = '?serviceKey='+ servicekey;
 queryParams += '&bgnde=' + ''; /*유기날짜 - 검색시작일 */
 queryParams += '&endde=' + ''; /*유기날짜 - 검색종료일*/
-queryParams += '&upkind=' + ''; /*품종코드(개 : 417000, 고양이 : 422400, 기타 : 429900)*/
+queryParams += '&upkind=' + '417000'; /*품종코드(개 : 417000, 고양이 : 422400, 기타 : 429900)*/
 queryParams += '&kind=' + ''; /*품종코드*/
 queryParams += '&upr_cd=' + '6110000'; /*시도코드*/
 queryParams += '&org_cd=' + ''; /*시군구코드*/
@@ -19,8 +19,6 @@ queryParams += '&neuter_yn=' + '';  /*중성화 (전체 : null(빈값), 예 : Y,
 queryParams += '&pageNo=' + 1; /*페이지 수*/
 queryParams += '&numOfRows=' + 3; /*몇개 띄울건지*/
 queryParams += '&_type=json'; /*json & xml*/
-
-
 
 xhr.open('GET', url + queryParams);
 xhr.onreadystatechange = function () {
