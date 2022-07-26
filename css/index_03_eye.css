@@ -375,6 +375,29 @@ main .center .pa1 tr td {
   font-size: 20px;
   font-weight: bold;
 }
+main .btn-down {
+  width: 225px;
+  position: absolute;
+  right: 10%;
+  margin-top: 20px;
+}
+main .btn-down a {
+  width: 100%;
+}
+main .btn-down a button {
+  width: 100%;
+  background-color: #FFDD85;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+main .btn-down a button i {
+  margin-left: 10px;
+  font-size: 20px;
+}
 main .bottom {
   width: 1000px;
   margin: 0 auto;
@@ -413,4 +436,4 @@ main .bottom .page a button:hover {
 main img {
   display: block;
   width: 100%;
-}/*# sourceMappingURL=index_01_all.css.map */
+}/*# sourceMappingURL=index_03_eye.css.map */
