@@ -4,48 +4,132 @@ const sido = 'http://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido';/*URL-�
 const sigungu = 'http://apis.data.go.kr/1543061/abandonmentPublicSrvc/sigungu';/*URL-시군구*/
 const public = 'http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic';/*URL-유기동물 조회*/
 
-var xhr = new XMLHttpRequest();
-var url = public; /*URL*/
-var queryParams = '?serviceKey='+ servicekey;
-queryParams += '&bgnde=' + ''; /*유기날짜 - 검색시작일 */
-queryParams += '&endde=' + ''; /*유기날짜 - 검색종료일*/
-queryParams += '&kind=' + ''; /*품종코드*/
-queryParams += '&upr_cd=' + '6110000'; /*시도코드*/
-queryParams += '&org_cd=' + ''; /*시군구코드*/
-queryParams += '&care_reg_no=' + ''; /*보호소코드*/
-queryParams += '&state=' + ''; /*상태(전체 : null(빈값), 공고중 : notice, 보호중 : protect)*/
-queryParams += '&neuter_yn=' + '';  /*중성화 (전체 : null(빈값), 예 : Y, 아니오 : N, 미상 : U)*/
-queryParams += '&pageNo=' + 1; /*페이지 수*/
-queryParams += '&numOfRows=' + 3; /*몇개 띄울건지*/
-queryParams += '&_type=json'; /*json & xml*/
+function request(uptype){
+    var xhr = new XMLHttpRequest();
+    var url = public; /*URL*/
+    var queryParams = '?serviceKey='+ servicekey;
+    queryParams += '&bgnde=' + ''; /*유기날짜 - 검색시작일 */
+    queryParams += '&endde=' + ''; /*유기날짜 - 검색종료일*/
+    queryParams += '&upkind=' + uptype; /*품종코드(개 : 417000, 고양이 : 422400, 기타 : 429900)*/
+    queryParams += '&kind=' + ''; /*품종코드*/
+    queryParams += '&upr_cd=' + '6110000'; /*시도코드*/
+    queryParams += '&org_cd=' + ''; /*시군구코드*/
+    queryParams += '&care_reg_no=' + ''; /*보호소코드*/
+    queryParams += '&state=' + ''; /*상태(전체 : null(빈값), 공고중 : notice, 보호중 : protect)*/
+    queryParams += '&neuter_yn=' + '';  /*중성화 (전체 : null(빈값), 예 : Y, 아니오 : N, 미상 : U)*/
+    queryParams += '&pageNo=' + 1; /*페이지 수*/
+    queryParams += '&numOfRows=' + 3; /*몇개 띄울건지*/
+    queryParams += '&_type=json'; /*json & xml*/
 
 
+    xhr.open('GET', url + queryParams);
+    xhr.send('');
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            dog(this);
+        }
+    };
+}
+request('417000');
 
-xhr.open('GET', url + queryParams);
-xhr.onreadystatechange = function () {
-    if (this.readyState == 4) {
-        let list = '';
-        let tags = [];
+
+function request(uptype){
+    var xhr = new XMLHttpRequest();
+    var url = public; /*URL*/
+    var queryParams = '?serviceKey='+ servicekey;
+    queryParams += '&bgnde=' + ''; /*유기날짜 - 검색시작일 */
+    queryParams += '&endde=' + ''; /*유기날짜 - 검색종료일*/
+    queryParams += '&upkind=' + uptype; /*품종코드(개 : 417000, 고양이 : 422400, 기타 : 429900)*/
+    queryParams += '&kind=' + ''; /*품종코드*/
+    queryParams += '&upr_cd=' + '6110000'; /*시도코드*/
+    queryParams += '&org_cd=' + ''; /*시군구코드*/
+    queryParams += '&care_reg_no=' + ''; /*보호소코드*/
+    queryParams += '&state=' + ''; /*상태(전체 : null(빈값), 공고중 : notice, 보호중 : protect)*/
+    queryParams += '&neuter_yn=' + '';  /*중성화 (전체 : null(빈값), 예 : Y, 아니오 : N, 미상 : U)*/
+    queryParams += '&pageNo=' + 1; /*페이지 수*/
+    queryParams += '&numOfRows=' + 3; /*몇개 띄울건지*/
+    queryParams += '&_type=json'; /*json & xml*/
+
+
+    xhr.open('GET', url + queryParams);
+    xhr.send('');
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            cat(this);
+            dog(this);
+        }
+    };
+    let c ='422400';
+    let d ='417000';
+}
+request('422400');
+
+
+function dog(_this){
+    let list;
+    let tags;
+    let data = _this.responseText;  // API
+    data = JSON.parse(data)   // API - json으로 바꿔주는 역할
+    data = data.response.body.items.item;
+    
+    function dogFind(){
+        list = '';
+        tags = [];
         let Box = document.querySelector('.find .dog-find ul');
-        let data = this.responseText;  // API
-        data = JSON.parse(data)   // API - json으로 바꿔주는 역할
-        data = data.response.body.items.item; 
-        // console.log(data)
-
-        
-
         data.forEach(function(value){
-            tags.push(`<li>
+            tags += `<li>
                 <p><img src="${value.popfile}"></p>
-                <p>${value.specialMark}</p>
-            </li>`);
+                <div class="li-txt"></div>
+                </li>`;
+            });
+            Box.innerHTML = tags;
+            
+        
+        let tags2 = [];
+        let TxtBox = document.querySelectorAll('.find .dog-find .li-txt');
+    
+        data.forEach(function(v,k){
 
-        });
-        tags.forEach(function(vlaue){
-            list += vlaue;
-        });
-        Box.innerHTML = list;
+            tags2 = `
+            <p>${v.age}</p>     
+            <p>${v.weight}</p>           
+            <p>${v.specialMark}</p>
+            `;
+            console.log(tags2);
+            TxtBox[k].innerHTML = tags2;
+        })
+
     }
-};
 
-xhr.send('');
+    dogFind();
+}
+
+function cat(_this){
+    let tags;
+    let data = _this.responseText;  // API
+    data = JSON.parse(data)   // API - json으로 바꿔주는 역할
+    data = data.response.body.items.item;
+
+    tags = [];
+    let CatBox = document.querySelector('.find .cat-find ul');
+    data.forEach(function(value){
+        tags += `<li>
+        <p><img src="${value.popfile}"></p>
+        <div class="li-txt"></div>
+        </li>`;
+    });
+    CatBox.innerHTML = tags;
+
+    let tags2 = [];
+    let TxtBox = document.querySelectorAll('.find .cat-find .li-txt');
+
+    data.forEach(function(v,k){
+        tags2 = `
+        <p>${v.age}</p>     
+        <p>${v.weight}</p>           
+        <p>${v.specialMark}</p>
+        `;
+        console.log(tags2);
+        TxtBox[k].innerHTML = tags2;
+    });
+}

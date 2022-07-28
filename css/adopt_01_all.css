@@ -1,0 +1,634 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UhBeeZZIBA-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+html,
+body {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .hd {
+  padding: 30px 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger {
+  display: block;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger ul li a:hover {
+  color: #FC9803;
+}
+header .hd h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+header .hd h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+header .hd nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav {
+  width: 100%;
+}
+header .hd nav .sub-nav ul {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+header .hd nav .sub-nav ul li {
+  width: 30%;
+  text-align: center;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(1) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(2) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(3) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(4) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li .sub-burger {
+  display: none;
+  margin-top: 40px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul {
+  width: 100%;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(1) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(2) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(3) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(4) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd .small-nav a:nth-of-type(1) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd .small-nav a:nth-of-type(2) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header a:hover {
+  color: #FC9803;
+}
+
+footer {
+  padding: 50px;
+  background-color: #FFDD85;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .logobox h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+footer .logobox h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+footer .fo-nav {
+  width: 50%;
+}
+footer .fo-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .fo-nav ul li {
+  text-align: center;
+}
+footer .fo-nav ul li a {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+footer .fo-nav ul li div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+footer .fo-nav ul li div a {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  margin: 10px 0;
+}
+footer .copy {
+  width: 100%;
+}
+footer a:hover {
+  color: #FC9803;
+}
+footer ul li div a:hover {
+  color: #FC9803;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main .vanner p {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  background-color: rgba(255, 224, 190, 0.8);
+}
+main .vanner p img {
+  vertical-align: top;
+  width: 100%;
+  opacity: 0.6;
+}
+main .share-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+}
+main .share-btn a:nth-of-type(1) {
+  background-color: #FFEAB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+main .share-btn a:nth-of-type(1)::after {
+  font-family: "FontAwesome";
+  content: "\f16d";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(2)::after {
+  font-family: "FontAwesome";
+  content: "\f39e";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(3)::after {
+  font-family: "FontAwesome";
+  content: "\f4ad";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(4)::after {
+  font-family: "FontAwesome";
+  content: "\f1e0";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(2) {
+  background-color: #FFEAB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+main .share-btn a:nth-of-type(1)::after {
+  font-family: "FontAwesome";
+  content: "\f16d";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(2)::after {
+  font-family: "FontAwesome";
+  content: "\f39e";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(3)::after {
+  font-family: "FontAwesome";
+  content: "\f4ad";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(4)::after {
+  font-family: "FontAwesome";
+  content: "\f1e0";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(3) {
+  background-color: #FFEAB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+main .share-btn a:nth-of-type(1)::after {
+  font-family: "FontAwesome";
+  content: "\f16d";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(2)::after {
+  font-family: "FontAwesome";
+  content: "\f39e";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(3)::after {
+  font-family: "FontAwesome";
+  content: "\f4ad";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(4)::after {
+  font-family: "FontAwesome";
+  content: "\f1e0";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(4) {
+  background-color: #FFEAB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+main .share-btn a:nth-of-type(1)::after {
+  font-family: "FontAwesome";
+  content: "\f16d";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(2)::after {
+  font-family: "FontAwesome";
+  content: "\f39e";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(3)::after {
+  font-family: "FontAwesome";
+  content: "\f4ad";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .share-btn a:nth-of-type(4)::after {
+  font-family: "FontAwesome";
+  content: "\f1e0";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .all {
+  text-align: center;
+}
+main .all hgroup {
+  margin-top: 70px;
+}
+main .all hgroup h2 {
+  font-family: "S-CoreDream-6Bold";
+  padding: 0;
+  margin: 0px;
+  font-size: 2.5rem;
+}
+main .all hgroup h4 {
+  margin: 0;
+  margin-top: 20px;
+  font-family: "S-CoreDream-3Light";
+  font-weight: 300;
+  font-size: 1.3rem;
+  white-space: pre-line;
+  color: #8E8E8E;
+}
+main .sort {
+  margin-top: 100px !important;
+  width: 80%;
+  margin: 0 auto;
+}
+main .sort ul {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+main .sort ul li a {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.7rem;
+  border-bottom: 3px solid #6A624D;
+  padding: 5px;
+  transform: 0.3s ease;
+}
+main .sort ul li a:hover {
+  color: #FC9803;
+  border-bottom: 3px solid #FC9803;
+}
+main .sort ul li a.active {
+  color: #FC9803;
+  border-bottom: 3px solid #FC9803;
+}
+main .sort ul li:nth-of-type(1) a::before {
+  content: "";
+  background: url("../img/icon/all.png") 0% 0%/100% no-repeat;
+  padding-left: 30px;
+  margin-right: 50px;
+}
+main .sort ul li:nth-of-type(1) a:hover::before {
+  background: url("../img/icon/all_y.png") 0% 0%/100% no-repeat;
+}
+main .sort ul li:nth-of-type(2) a::before {
+  content: "";
+  background: url("../img/icon/dog.png") 0% 0%/100% no-repeat;
+  padding-left: 30px;
+  margin-right: 50px;
+}
+main .sort ul li:nth-of-type(2) a:hover::before {
+  background: url("../img/icon/dog_icon_y.png") 0% 0%/100% no-repeat;
+}
+main .sort ul li:nth-of-type(3) a::before {
+  content: "";
+  background: url("../img/icon/cat.png") 0% 0%/100% no-repeat;
+  padding-left: 30px;
+  margin-right: 50px;
+}
+main .sort ul li:nth-of-type(3) a:hover::before {
+  background: url("../img/icon/cat_icon_y.png") 0% 0%/100% no-repeat;
+}
+main .sort ul li:nth-of-type(4) a::before {
+  content: "";
+  background: url("../img/icon/etc.png") 0% 0%/100% no-repeat;
+  padding-left: 30px;
+  margin-right: 50px;
+}
+main .sort ul li:nth-of-type(4) a:hover::before {
+  background: url("../img/icon/etc_y.png") 0% 0%/100% no-repeat;
+}
+main .find {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+main .find ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+}
+main .find ul li {
+  width: 22%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFDD85;
+  margin-bottom: 3%;
+  transition: 0.3s ease;
+  transform: translateY(0%);
+  transition: 0.3s ease;
+}
+main .find ul li:hover {
+  transform: translateY(-10%);
+  box-shadow: 10px 10px 10px rgba(142, 142, 142, 0.4117647059);
+}
+main .find ul li:hover p {
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+main .find ul li:hover p img {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+main .find ul li:hover .li-txt p {
+  background-color: transparent;
+}
+main .find ul li p {
+  width: 100%;
+  height: 25vh;
+  /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+main .find ul li p img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+  transition: 0.3s ease;
+}
+main .find ul li .li-txt {
+  padding: 20px;
+  height: 250px;
+  text-align: center;
+}
+main .find ul li .li-txt p {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "S-CoreDream-4Regular";
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 10px 0;
+}
+main .btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 250px;
+}
+main .btn a {
+  background-color: #F1F1F1;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 10px;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+  display: inline-block;
+}
+main .btn a:hover {
+  color: rgb(10, 0, 68);
+  background-color: #FFDD85;
+}
+main .btn > a:nth-of-type(1)::after {
+  font-family: "FontAwesome";
+  content: "\f053";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+main .btn > a:last-of-type::after {
+  font-family: "FontAwesome";
+  content: "\f054";
+  margin: 0;
+  padding: 0;
+  color: #444;
+}/*# sourceMappingURL=adopt_01_all.css.map */

@@ -7,70 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be With Me</title>
     <link href="./css/index.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <!-- font-Awesome -->
     <script defer src="https://kit.fontawesome.com/09be1ef41e.js" crossorigin="anonymous"></script>
 
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!--slide css -->
+    <link href="./css/slick.css" rel="stylesheet"> 
+    <script defer src="./js/slide.js"></script>
+    <script defer src="./js/slick.min.js"></script>
+    417000
+    <!-- load-spa-JQUERY -->
+    <script defer src="./js/common.js"></script>
+
     <!-- js -->
-    <script defer src="./js/index.js"></script>
+    <script defer src="./js/index_text3.js"></script>
+    <script defer src="./js/index_scroll.js"></script>
+
 </head>
 
 <body>
     <!-- header -->
-    <header>
-        <div class="hd">
-            <h2><a href="#"></a></h2>
-
-            <nav>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#">실종 · 보호</a>
-                            <div class="sub-burger">
-                                <ul>
-                                    <li>
-                                        <a href="#">실종</a>
-                                        <a href="#">보호</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">입양</a>
-                            <div class="sub-burger">
-                                <ul>
-                                    <li>
-                                        <a href="#">입양하기</a>
-                                        <a href="#">입양안내</a>
-                                        <a href="#">입양후기</a>
-                                        <a href="#">입양센터</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">정보 · 소식</a>
-                            <div class="sub-burger">
-                                <ul>
-                                    <li>
-                                        <a href="#">공지사항</a>
-                                        <a href="#">FAQ</a>
-                                        <a href="#">목격담</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="small-nav">
-                <a href="#">로그인</a>
-                <a href="#">관심</a>
-            </div>
-        </div>
-    </header>
+    <header></header>
     <!-- main -->
     <main>
         <!-- slide start -->
-        <div class="slide">
-            <ul>
+        <div class="slide-div">
+            <ul class="slide">
                 <li>
                     <p><img src="./img/slide/slide_01.jpg" alt="slide-01"></p>
                     <div class="slide-txt">
@@ -78,108 +45,261 @@
                             따뜻한 가족이 되어주세요</h2>
                         <a href="#">유기동물 입양하러 가기</a>
                     </div>
-                </li>
+                </li><!-- li-01 -->
+                <li>
+                    <p><img src="./img/slide/slide_02.jpg" alt="slide-02"></p>
+                    <div class="slide-txt">
+                        <h2>소중한 가족, 보호소에서
+                            안전하게 보호하고 있습니다.</h2>
+                        <a href="#">실종동물 확인하러 가기</a>
+                    </div>
+                </li><!-- li-02 -->
+                <li>
+                    <p><img src="./img/slide/slide_03.jpg" alt="slide-03"></p>
+                    <div class="slide-txt">
+                        <h2>반려동물을 잃어버렸나요?
+                            주위에 널리 알려보세요.
+                        </h2>
+                        <a href="#">실종동물 등록하러 가기</a>
+                    </div>
+                </li><!-- li-03 -->
+                <li>
+                    <p><img src="./img/slide/slide_04.jpg" alt="slide-04"></p>
+                    <div class="slide-txt">
+                        <h2>다른 누군가의 가족을
+                            발견하셨나요? 이곳에서 알려주세요.
+                        </h2>
+                        <a href="#">목격담 작성하러 가기</a>
+                    </div>
+                </li><!-- li-04 -->
+                <li>
+                    <p><img src="./img/slide/slide_05.jpg" alt="slide-05"></p>
+                    <div class="slide-txt">
+                        <h2>소중한 나의 가족의 근황을
+                            다른 사람들에게도 알려주세요.</h2>
+                        <a href="#">입양 후기작성 하기</a>
+                    </div>
+                </li><!-- li-05 -->
             </ul>
         </div><!-- slide -->
 
 
         <!-- adopt start -->
         <div class="adopt">
-            <h2>입양안내 칸입니다.</h2>            
+            <div class="ad-txt">
+                <h2>입양절차</h2>
+            </div>
+            <div class="adopt-slide">
+            <div class="rotate-circle">
+                <div class="rotate">
+                    <ul>
+                        <li>
+                            <div class="slide-icon">
+                                <p><img src="../BeWithMe/img/icon/adopt/adopt01.png"></p>
+                                <p>상담 예약</p>
+                            </div>
+                            <span></span>
+                        </li><!-- li-01 -->
+
+                        <li>
+                            <div class="slide-icon">
+                                <p><img src="../BeWithMe/img/icon/adopt/adopt02.png"></p>
+                                <p>입양 교육</p>
+                            </div>
+                            <span></span>
+                        </li><!-- li-02 -->
+
+                        <li>
+                            <div class="slide-icon">
+                                <p><img src="../BeWithMe/img/icon/adopt/adopt03.png"></p>
+                                <p>입양 진행</p>
+                            </div>
+                            <span></span>
+                        </li><!-- li-03 -->
+
+                        <li>
+                            <div class="slide-icon">
+                                <p><img src="../BeWithMe/img/icon/adopt/adopt04.png"></p>
+                                <p>입양 완료</p>
+                            </div>
+                            <span></span>
+                        </li><!-- li-04 -->
+                    </ul>
+                </div>
+                <div class="circle">
+                </div>
+            </div>
+            <div class="adopt-Ri-txt">
+                <ul>
+                    <li>
+                        <h2>1. 입양 상담 예약</h2>
+                        <p>비윗미 홈페이지에서 '입양 가능동물'을 
+                            확인 후 해당 센터에 유선 예약 방문하셔서 
+                            상담 및 설문지를 작성합니다.
+                            설문지 작성후 2차례이상 센터에 방문하여 
+                            입양 의사를 표현합니다.</p>
+                    </li><!-- li-01 -->
+
+                    <li>
+                        <h2>1. 입양 전 교육</h2>
+                        <p>입양자로 확정 된 이후 입양 
+                            전 2회 교육을 해당 센터에서 
+                            의무적으로 이수합니다.
+                            <span>※추가 교육을 희망하시는 분은 
+                                각 시의 학습포털에서 '반려동물 
+                                입양교육'을 이수해주세요.</span></p>
+                    </li><!-- li-02 -->
+
+                    <li>
+                        <h2>3. 입양 진행</h2>
+                        <p>입양은 1~2회 입양 상담 및 
+                            개체만남을 통해 진행됩니다.
+                        <span>※입양 후 파양은 불가합니다. 
+                            만남을 통해 신중히 결정해 주세요</span></p>
+                    </li><!-- li-03 -->
+
+                    <li>
+                        <h2>4. 입양 완료 및 후기 공유</h2>
+                        <p>입양견과 분양증서를 받습니다.
+                            보호자님과 입양된 반려동물의 
+                            행복한 일상을 홈페이지 
+                            입양 후기 메뉴에 올려주세요.
+                            입양 대기중인 아이들의 입양과 
+                            인식 개선에 많은 도움이 됩니다.</p>
+                    </li><!-- li-04 -->
+                </ul>
+            </div>
+        </div>
         </div>
 
-        <!-- dog start -->
+        <!-- find start -->
         <div class="find">
             <div class="find-txt">
                 <h2>새로운 가족을 찾습니다</h2>
                 <p>유기된 동물들의 새로운 가족이 되어주세요</p>
             </div>
+
+            <!-- dog -->
             <div class="dog-find">
                 <ul>
                     <li>
-                        <p><img src=""></p>
-                        <div class="find-txt">
-                            <h4></h4>
-                            <b></b>
+
+                    </li><!-- test-1 -->
+                </ul>
+                <div class="findA-txt">
+                    <div class="dog">
+                        <p><img src="./img/icon/paw_icon_y.png"></p>
+                        <p><img src="./img/icon/dog_icon_y.png"></p>
+                    </div>
+                    <h3>내곁에 애교쟁이
+                        <span>강아지</span>친구들의
+                        가족이 되어주세요!
+                    </h3>
+                    <a href="#">강아지 더보러 가기</a>
+                </div>
+            </div>
+
+            <!-- cat -->
+            <div class="cat-find">
+                <div class="findB-txt">
+                    <div class="cat">
+                        <p><img src="./img/icon/cat_icon_y.png"></p>
+                        <p><img src="./img/icon/paw_icon_y.png"></p>
+                    </div>
+                    <h3>무릎위 도도쟁이
+                        <span>고양이</span>친구들의
+                        가족이 되어주세요
+                        <a href="#">고양이 더보러 가기</a>
+                </div>
+                <ul>
+                    <li>
+                        <!-- <p><img src=""></p> -->
+                        <div class="li-txt">
+                            <p></p>
                             <p></p>
                         </div>
-                    </li><!-- test-1 -->
+                    </li>
+
+            </div>
+        </div><!-- find end -->
+
+        <!-- family start -->
+        <div class="family">
+            <hgroup>
+                <h2>이젠 여러분의 가족입니다.</h2>
+                <h4>새로운 삶을 살고 있는 유기동물들의 이야기</h4>
+            </hgroup>
+            <div class="revi-btn"><a href="">후기 더보기</a></div>
+
+            <div class="fa-review">
+                <ul>
                     <li>
-                        <div class="findA-txt">
-                            <h3>내곁에 애교쟁이
-                                <span>강아지</span>친구들의
-                                가족이 되어주세요!
-                            </h3>
-                            <a href="#">강아지 더보러 가기</a>
+                        <p>
+                            <img src="">
+                        </p>
+                        <div class="li-txt">
+                            <p></p>
                         </div>
                     </li>
                 </ul>
             </div>
-            <!-- <div class="cat-find">
+        </div><!-- family end -->
+
+        <!-- missing start -->
+        <div class="missing">
+            <div class="mi-btn">
+                <a href="#">실종동물을 찾습니다.</a>
+            </div>
+            <div class="mibox">
+                <div class="miss-txt">
+                    <h2>“잊을 수 없는
+                        소중한 <span>가족</span>을
+                        찾습니다.”
+                    </h2>
+                </div>
+
                 <ul>
                     <li>
-                        <p><img src=""></p>
-                        <div class="find-txt">
-                            <h4></h4>
-                            <b></b>
-                            <p></p>
+                        <p><img src="./img/missing/missing_01.jpg" alt="missing_01"></p>
+                        <div class="mi-txt">
+                            <h4>설이 / 믹스 / 3세 / 수컷</h4>
+                            <p>실종지역 : 은평구 신사동</p>
+                            <p>특징 : 예민하고 겁이 많음</p>
                         </div>
-                    </li>
-                    <div class="findA-txt">
-                        <h3>무릎위 도도쟁이
-                            <span>고양이</span>친구들의
-                            가족이 되어주세요
-                            <a href="#">고양이 더보러 가기</a>
-                    </div>
-            </div> -->
+                    </li><!-- li-01 -->
+                    <li>
+                        <p><img src="./img/missing/missing_02.jpg" alt="missing_02"></p>
+                        <div class="mi-txt">
+                            <h4>나비 / 코숏 / 2세 / 암컷</h4>
+                            <p>실종지역 : 남동구 삼성멘션</p>
+                            <p>특징 : 왼쪽 점</p>
+                        </div>
+                    </li><!-- li-02 -->
+                    <li>
+                        <p><img src="./img/missing/misssing_03.jpg" alt="missing_03"></p>
+                        <div class="mi-txt">
+                            <h4>초코 / 스피치 / 4세 /암컷</h4>
+                            <p>실종지역 : 내화산 컨테이너 사무실</p>
+                            <p>특징 : 귀,뒷목 베이지색 반점</p>
+                        </div>
+                    </li><!-- li-03 -->
+                </ul>
+            </div>
+            <div class="mi-sub-btn">
+                <a href="#">실종</a>
+                <a href="#">보호</a>
+                <a href="#">목격담</a>
+            </div>
+        </div>
+
+        <div class="vanner">
+            <a href="./adopt_02_process.html"><img src="./img/ramdom/ramdom_01.jpg" alt="imsi"></a>
         </div>
 
 
     </main>
     <!-- footer -->
-    <footer>
-        <div class="logobox">
-            <h2><a href="#">Be With ME</a></h2>
-        </div>
-
-        <div class="hd-nav">
-            <ul>
-                <li><a href="#">플랫폼 소개</a></li>
-                <li><a href="#">실종 · 보호</a>
-                    <div>
-                        <a>실종</a>
-                        <a>보호</a>
-                    </div>
-                </li>
-
-                </li>
-                <li><a href="#">입양</a>
-                    <div>
-                        <a href="#">입양 하기</a>
-                        <a href="#">입양 안내</a>
-                        <a href="#">입양 후기</a>
-                        <a href="#">입양 센터</a>
-                    </div>
-                </li>
-                <li><a href="#">정보 · 소식</a>
-                    <div>
-                        <a href="#">공지사항</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">목격담</a>
-                    </div>
-                </li>
-                <li><a href="#">문의하기</a></li>
-            </ul>
-        </div>
-
-        <div class="copy">
-            <p>이용약관 | 개인정보취급방침</p>
-            <a>사이트문의 : bewithme@gmail.com</a>
-            <p>Copyright ©2019 BEWITHME All rights reserved.</p>
-        </div>
-
-
-    </footer>
+    <footer></footer>
 </body>
 
 </html>

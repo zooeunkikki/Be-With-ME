@@ -39,6 +39,7 @@
   box-sizing: border-box;
   font-size: 1rem;
   line-height: 1.6;
+  color: #444;
 }
 
 html,
@@ -71,9 +72,15 @@ header {
 header .hd {
   padding: 30px 150px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  background-color: #FFEAB5;
+  transition: 0.3s ease;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger {
+  display: block;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger ul li a:hover {
+  color: #FC9803;
 }
 header .hd h2 {
   margin: 0;
@@ -94,69 +101,78 @@ header .hd nav {
   justify-content: space-between;
 }
 header .hd nav .sub-nav {
-  display: flex;
+  width: 100%;
 }
 header .hd nav .sub-nav ul {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
+}
+header .hd nav .sub-nav ul li {
+  width: 30%;
+  text-align: center;
 }
 header .hd nav .sub-nav ul li a:nth-of-type(1) {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
-  padding: 0 70px;
 }
 header .hd nav .sub-nav ul li a:nth-of-type(2) {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
-  padding: 0 70px;
 }
 header .hd nav .sub-nav ul li a:nth-of-type(3) {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
-  padding: 0 70px;
 }
 header .hd nav .sub-nav ul li a:nth-of-type(4) {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
-  padding: 0 70px;
 }
 header .hd nav .sub-nav ul li .sub-burger {
   display: none;
   margin-top: 40px;
 }
+header .hd nav .sub-nav ul li .sub-burger ul {
+  width: 100%;
+}
 header .hd nav .sub-nav ul li .sub-burger ul li {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(1) {
-  margin-top: 30px;
   display: inline-block;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
   color: #746454;
+  padding: 15px 0px;
 }
 header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(2) {
-  margin-top: 30px;
   display: inline-block;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
   color: #746454;
+  padding: 15px 0px;
 }
 header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(3) {
-  margin-top: 30px;
   display: inline-block;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
   color: #746454;
+  padding: 15px 0px;
 }
 header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(4) {
-  margin-top: 30px;
   display: inline-block;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
   color: #746454;
+  padding: 15px 0px;
 }
 header .hd .small-nav a:nth-of-type(1) {
   font-family: "S-CoreDream-3Light";
@@ -180,12 +196,18 @@ header .hd .small-nav a:nth-of-type(2)::before {
   height: 10px;
   margin: 0 10px;
 }
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
 header a:hover {
   color: #FC9803;
 }
 
 footer {
-  padding: 30px 50px;
+  padding: 50px;
   background-color: #FFDD85;
   display: flex;
   align-items: flex-start;
@@ -204,27 +226,31 @@ footer .logobox h2 a {
   height: 30px;
   background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
 }
-footer .hd-nav ul {
+footer .fo-nav {
+  width: 50%;
+}
+footer .fo-nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-footer .hd-nav ul li {
+footer .fo-nav ul li {
   text-align: center;
 }
-footer .hd-nav ul li a {
+footer .fo-nav ul li a {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
-  padding: 0 70px;
 }
-footer .hd-nav ul li div {
+footer .fo-nav ul li div {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
 }
-footer .hd-nav ul li div a {
+footer .fo-nav ul li div a {
+  text-align: center;
   font-size: 1.5rem;
   font-family: "S-CoreDream-5Medium";
-  padding: 0 70px;
   color: #746454;
   margin: 10px 0;
 }
@@ -239,41 +265,44 @@ footer ul li div a:hover {
 }
 
 main {
-  margin: 10px auto;
+  margin: 0 auto;
 }
-main .slide ul li {
+main .slide-div .slide li {
   position: relative;
-  width: 100%;
+  width: 2%;
 }
-main .slide ul li p {
+main .slide-div .slide li p {
   display: inline-block;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.8);
   vertical-align: top;
 }
-main .slide ul li p img {
+main .slide-div .slide li p img {
   width: 100%;
   opacity: 0.6;
   vertical-align: top;
 }
-main .slide ul li .slide-txt {
+main .slide-div .slide li .slide-txt {
   position: absolute;
   left: 40%;
   top: 30%;
   text-align: center;
+  transform: translateX(3%);
 }
-main .slide ul li .slide-txt h2 {
+main .slide-div .slide li .slide-txt h2 {
   font-family: "S-CoreDream-5Medium";
   font-size: 2rem;
   white-space: pre-line;
+  color: #D9D9D9;
 }
-main .slide ul li .slide-txt a {
+main .slide-div .slide li .slide-txt a {
   font-family: "S-CoreDream-3Light";
   font-size: 1.5rem;
   color: #D9D9D9;
 }
-main .slide ul li .slide-txt a::before {
+main .slide-div .slide li .slide-txt a::before {
   content: "";
   display: block;
   width: 40%;
@@ -281,7 +310,7 @@ main .slide ul li .slide-txt a::before {
   border-top: 1px solid #D9D9D9;
   padding-top: 10px;
 }
-main .slide ul li .slide-txt a::after {
+main .slide-div .slide li .slide-txt a::after {
   display: inline-block;
   font-family: "FontAwesome";
   content: "\f054";
@@ -289,11 +318,150 @@ main .slide ul li .slide-txt a::after {
   padding-left: 20px;
 }
 main .adopt {
-  margin: 200px;
+  margin: 200px auto 300px;
+}
+main .adopt .ad-txt {
+  text-align: center;
+}
+main .adopt .ad-txt h2 {
+  font-family: "S-CoreDream-6Bold";
+  padding: 0;
+  margin: 0px;
+  font-size: 2.5rem;
+  color: #FC9803;
+}
+main .adopt .adopt-slide {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .adopt .adopt-slide .rotate-circle {
+  position: relative;
+  width: 40%;
+}
+main .adopt .adopt-slide .rotate-circle .rotate {
+  display: block;
+  position: relative;
+  width: 700px;
+  height: 700px;
+  border: 5px solid #FC9803;
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul {
+  position: relative;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li {
+  display: flex;
+  justify-content: flex-end;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 150px;
+  background-color: #FFF3DB;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(1) {
+  margin: 0 auto;
+  padding: 30px 10px 20px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  vertical-align: top;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(1) img {
+  width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon p:nth-of-type(2) {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.2rem;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon::before {
+  transition: 0.3s ease;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li .slide-icon:hover::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  background-color: #FC9803;
+  border-radius: 100px;
+  font-family: "S-CoreDream-5Medium";
+  color: #444;
+  font-size: 2rem;
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(1) .slide-icon {
+  transform: translate(-300px, -80px);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(2) .slide-icon {
+  transform: translateX(50px);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(3) .slide-icon {
+  transform: translate(50px, 30px);
+}
+main .adopt .adopt-slide .rotate-circle .rotate ul li:nth-of-type(4) .slide-icon {
+  transform: translate(-30px, 50px);
+}
+main .adopt .adopt-slide .rotate-circle .circle {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  transform: translateX(4%);
+  display: inline-block;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 500px;
+  height: 500px;
+  background: #FFDD85;
+  box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.2);
+  border-radius: 100%;
+  z-index: -1;
+}
+main .adopt .adopt-slide .adopt-Ri-txt {
+  position: relative;
+  width: 40%;
+}
+main .adopt .adopt-slide .adopt-Ri-txt ul {
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  padding: 10% 20%;
+}
+main .adopt .adopt-slide .adopt-Ri-txt ul li h2 {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 2.5rem;
+}
+main .adopt .adopt-slide .adopt-Ri-txt ul li p {
+  margin-top: 30px;
+  font-family: "S-CoreDream-3Light";
+  color: #8E8E8E;
+  font-size: 1.5rem;
+}
+main .adopt .adopt-slide .adopt-Ri-txt::before {
+  content: "";
+  display: inline-block;
+  height: 80%;
+  border-left: 3px solid #FC9803;
+  transform: translate(-60px, 20px);
 }
 main .find {
-  background-color: #FFEAB5;
+  background-color: #FFF3DB;
   text-align: center;
+}
+main .find .find-txt {
+  padding-top: 50px;
 }
 main .find .find-txt h2 {
   font-family: "S-CoreDream-6Bold";
@@ -318,27 +486,42 @@ main .find .find-txt p::before {
   border-top: 1px solid #AA6600;
   padding-top: 10px;
 }
-main .find .dog-find ul {
-  width: 80%;
+main .find .dog-find {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin: 0 auto;
+  margin-top: 100px;
+}
+main .find .dog-find ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: flex-start;
   align-content: center;
 }
 main .find .dog-find ul li {
-  width: 20%;
+  width: 25%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFDD85;
+  transition: 0.3s ease;
+  transform: translateY(0%);
+}
+main .find .dog-find ul li:hover {
+  transform: translateY(-10%);
+  box-shadow: 10px 10px 10px rgba(142, 142, 142, 0.4117647059);
 }
 main .find .dog-find ul li p {
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
   display: inline-block;
   padding: 0;
   margin: 0;
   vertical-align: top;
   overflow: hidden;
-  border-radius: 7%;
 }
 main .find .dog-find ul li p img {
   width: 100%;
@@ -347,8 +530,452 @@ main .find .dog-find ul li p img {
      object-fit: cover;
   vertical-align: top;
 }
-main .find .dog-find ul li .find-txt h3 {
+main .find .dog-find ul li .li-txt {
+  padding: 20px;
+  height: 250px;
+}
+main .find .dog-find ul li .li-txt p {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "S-CoreDream-4Regular";
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 10px 0;
+}
+main .find .dog-find .findA-txt {
+  width: 30%;
+}
+main .find .dog-find .findA-txt .dog {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+main .find .dog-find .findA-txt .dog p {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+main .find .dog-find .findA-txt .dog p img {
+  width: 100%;
+  vertical-align: top;
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(1) {
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(1):hover {
+  transform: rotate(45deg);
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(2) {
+  display: inline-block;
+  width: 100px;
+  color: #FC9803;
+}
+main .find .dog-find .findA-txt .dog p:nth-of-type(2) img {
+  width: 100%;
+  vertical-align: top;
+}
+main .find .dog-find .findA-txt h3 {
+  font-family: "S-CoreDream-3Light";
+  font-size: 2.15rem;
+  white-space: pre-line;
+  color: #444;
+}
+main .find .dog-find .findA-txt h3 span {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 2.3rem;
+  padding-right: 5px;
+  color: #AA6600;
+}
+main .find .dog-find .findA-txt a {
+  display: inline-block;
+  font-family: "S-CoreDream-6Bold";
+  font-size: 1.75rem;
+  text-align: right;
+  color: #444;
+}
+main .find .dog-find .findA-txt a::after {
+  font-family: "FontAwesome";
+  content: "+";
+  display: inline-block;
+  margin: 0;
+  margin-left: 20px;
+  color: #FC9803;
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .dog-find .findA-txt a:hover::after {
+  transform: rotate(180deg);
+}
+main .find .cat-find {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 100px !important;
+  padding-bottom: 150px;
+}
+main .find .cat-find .findB-txt {
+  width: 30%;
+}
+main .find .cat-find .findB-txt .cat {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+main .find .cat-find .findB-txt .cat p {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+main .find .cat-find .findB-txt .cat p img {
+  width: 100%;
+  vertical-align: top;
+}
+main .find .cat-find .findB-txt .cat p:nth-of-type(2) {
+  width: 50px;
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .cat-find .findB-txt .cat p:nth-of-type(2):hover {
+  transform: rotate(-45deg);
+}
+main .find .cat-find .findB-txt h3 {
+  font-family: "S-CoreDream-3Light";
+  font-size: 2.15rem;
+  white-space: pre-line;
+  color: #444;
+}
+main .find .cat-find .findB-txt h3 span {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 2.3rem;
+  padding-right: 5px;
+  color: #AA6600;
+}
+main .find .cat-find .findB-txt a {
+  display: inline-block;
+  font-family: "S-CoreDream-6Bold";
+  font-size: 1.75rem;
+  text-align: left;
+  color: #444;
+}
+main .find .cat-find .findB-txt a::after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "+";
+  margin: 0;
+  margin-left: 20px;
+  color: #FC9803;
+  transition: 0.3s ease;
+  transform: rotate(0deg);
+}
+main .find .cat-find .findB-txt a:hover::after {
+  transform: rotate(180deg);
+}
+main .find .cat-find ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+}
+main .find .cat-find ul li {
+  width: 25%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFDD85;
+  transition: 0.3s ease;
+  transform: translateY(0%);
+}
+main .find .cat-find ul li:hover {
+  transform: translateY(-10%);
+  box-shadow: 10px 10px 10px rgba(142, 142, 142, 0.4117647059);
+}
+main .find .cat-find ul li p {
+  width: 100%;
+  height: 25vh;
+  /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  overflow: hidden;
+}
+main .find .cat-find ul li p img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+}
+main .find .cat-find ul li .li-txt {
+  padding: 20px;
+  height: 250px;
+}
+main .find .cat-find ul li .li-txt p {
+  display: inline-block;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 10px 0;
+}
+main .family {
+  margin-top: 150px;
+}
+main .family hgroup {
+  text-align: center;
+}
+main .family hgroup h2 {
+  font-family: "S-CoreDream-6Bold";
+  color: #FC9803;
+  font-size: 2.5rem;
+  margin: 0;
+}
+main .family hgroup h4 {
+  font-family: "S-CoreDream-3Light";
+  color: #8E8E8E;
+  font-size: 1.3rem;
+  margin: 0;
+}
+main .family .revi-btn {
+  margin-top: 25px;
+  text-align: center;
+}
+main .family .revi-btn a {
+  font-family: "S-CoreDream-3Light";
+  color: #8E8E8E;
+  font-size: 1.2rem;
+}
+main .family .revi-btn a::after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f054";
+  margin: 0;
+  padding-left: 20px;
+}
+main .family .revi-btn a:hover {
+  color: #FC9803;
+  font-family: "S-CoreDream-5Medium";
+}
+main .family .fa-review {
+  margin-top: 70px;
+}
+main .family .fa-review ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+}
+main .family .fa-review ul li {
+  width: 30%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FFDD85;
+}
+main .family .fa-review ul li p {
+  width: 100%;
+  height: 30vh;
+  /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  overflow: hidden;
+}
+main .family .fa-review ul li p img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+}
+main .family .fa-review ul .li-txt p {
+  font-family: "S-CoreDream-4Regular";
+  display: inline-block;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
+}
+main .missing {
+  margin-top: 250px;
+  padding: 100px;
+  background: url("../img/vanner/cat_dog 2.png") -10% 100%/50% no-repeat;
+  background-color: #FFF3DB;
+}
+main .missing .mi-btn a {
+  font-family: "S-CoreDream-5Medium";
+  color: #444;
+  font-size: 2rem;
+}
+main .missing .mi-btn a::after {
+  font-family: "FontAwesome";
+  content: "+";
+  margin: 0;
+  padding-left: 20px;
+  color: #FC9803;
+}
+main .missing .mibox {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .missing .mibox .miss-txt {
+  width: 30%;
+}
+main .missing .mibox .miss-txt h2 {
+  display: inline-block;
+  text-align: center;
+  font-family: "UhBeeZZIBA-Regular";
   white-space: pre-line;
+  font-size: 4.5rem;
+  color: #935F10;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+main .missing .mibox .miss-txt h2 span {
+  font-size: 3.5rem;
+  color: #351600;
+  font-weight: bold;
+}
+main .missing .mibox ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .missing .mibox ul li {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 5%;
+  transition: 0.3s ease;
+  transform: translateY(0%);
+}
+main .missing .mibox ul li:hover {
+  transform: translateY(-10%);
+  box-shadow: 10px 10px 10px rgba(142, 142, 142, 0.4117647059);
+}
+main .missing .mibox ul li p {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: top;
+  border-radius: 5%;
+}
+main .missing .mibox ul li p img {
+  width: 100%;
+  vertical-align: top;
+}
+main .missing .mibox ul li .mi-txt {
+  padding: 20px 10px;
+}
+main .missing .mibox ul li .mi-txt h4 {
+  font-family: "S-CoreDream-5Medium";
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+main .missing .mibox ul li .mi-txt p {
+  font-family: "S-CoreDream-3Light";
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+main .missing .mibox ul li .mi-txt p:nth-last-of-type(1) {
+  padding-bottom: 20px;
+}
+main .missing .mi-sub-btn {
+  margin-top: 150px;
+  padding: 0 100px;
+  text-align: center;
+}
+main .missing .mi-sub-btn a:nth-of-type(1) {
+  background: url("../img/icon/missing_icon_y.png") 50% 80%/30% no-repeat;
+  transform: translate(-55%, 0%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(1):hover {
+  background: url("../img/icon/missing_icon_w.png") 50% 80%/30% no-repeat;
+  transform: translate(-55%, -20%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(2) {
+  background: url("../img/icon/protect_icon_y.png") 50% 80%/30% no-repeat;
+  transform: translate(-80%, 0%);
+}
+main .missing .mi-sub-btn a:nth-of-type(2):hover {
+  background: url("../img/icon/protect_icon_w.png") 50% 80%/30% no-repeat;
+  transform: translate(-80%, -20%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(3) {
+  background: url("../img/icon/mook_icon_y.png") 50% 80%/30% no-repeat;
+  transform: translate(-100%, 0%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(3):hover {
+  background: url("../img/icon/mook_icon_w.png") 50% 80%/30% no-repeat;
+  transform: translate(-100%, -20%) !important;
+}
+main .missing .mi-sub-btn a:nth-of-type(1) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 60px 20px;
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+main .missing .mi-sub-btn a:nth-of-type(2) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 60px 20px;
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+main .missing .mi-sub-btn a:nth-of-type(3) {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 60px 20px;
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+main .missing .mi-sub-btn a:hover {
+  background-color: #FFD231 !important;
+  box-shadow: 10px 10px 10px rgba(142, 142, 142, 0.4117647059);
+}
+main .vanner {
+  margin-top: 200px;
+  overflow: hidden;
+}
+main .vanner a {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  overflow: hidden;
+}
+main .vanner a img {
+  width: 100%;
+  vertical-align: top;
 }/*# sourceMappingURL=index.css.map */

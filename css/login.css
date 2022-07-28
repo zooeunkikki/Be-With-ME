@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UhBeeZZIBA-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+html,
+body {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .hd {
+  padding: 30px 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger {
+  display: block;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger ul li a:hover {
+  color: #FC9803;
+}
+header .hd h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+header .hd h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+header .hd nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav {
+  width: 100%;
+}
+header .hd nav .sub-nav ul {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+header .hd nav .sub-nav ul li {
+  width: 30%;
+  text-align: center;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(1) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(2) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(3) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(4) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li .sub-burger {
+  display: none;
+  margin-top: 40px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul {
+  width: 100%;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(1) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(2) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(3) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(4) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd .small-nav a:nth-of-type(1) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd .small-nav a:nth-of-type(2) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header a:hover {
+  color: #FC9803;
+}
+
+footer {
+  padding: 50px;
+  background-color: #FFDD85;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .logobox h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+footer .logobox h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+footer .fo-nav {
+  width: 50%;
+}
+footer .fo-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .fo-nav ul li {
+  text-align: center;
+}
+footer .fo-nav ul li a {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+footer .fo-nav ul li div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+footer .fo-nav ul li div a {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  margin: 10px 0;
+}
+footer .copy {
+  width: 100%;
+}
+footer a:hover {
+  color: #FC9803;
+}
+footer ul li div a:hover {
+  color: #FC9803;
+}
+
+.login {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.login .left {
+  margin-right: 30px;
+}
+.login .left .logo h2 {
+  margin: 20px 0;
+}
+.login .left .logo h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+.login .left .btn p {
+  margin: 0;
+  margin-top: 10px;
+}
+.login .left .btn p input {
+  width: 310px;
+  padding: 10px 7px;
+  font-family: "S-CoreDream-4Regular";
+  border-radius: 5px;
+  border: 1px solid #8E8E8E;
+}
+.login .left .checkbox {
+  display: flex;
+  font-family: "S-CoreDream-4Regular";
+}
+.login .left button {
+  width: 310px;
+  height: 50px;
+  background-color: #FFDD85;
+  border: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.2rem;
+}
+.login .left .sns-btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.login .left .sns-btn a {
+  display: inline-block;
+  font-family: "S-CoreDream-4Regular";
+  width: 100px;
+  height: 50px;
+  padding: 60px 0 0;
+}
+.login .left .sns-btn a:nth-of-type(1) {
+  background: url("../img/login/naver_logo_icon.png") 50% 0%/50% no-repeat;
+}
+.login .left .sns-btn a:nth-of-type(2) {
+  background: url("../img/login/kakao_logo_icon.png") 50% 0%/50% no-repeat;
+}
+.login .left::after {
+  content: "SNS계정으로 간편 로그인/회원가입";
+  display: block;
+  border-top: 1px solid #8E8E8E;
+  transform: translateY(35px);
+  width: 80%;
+  margin: 0px auto 10px;
+}
+.login .right p {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.login .right p img {
+  width: 100%;
+  vertical-align: top;
+}/*# sourceMappingURL=login.css.map */

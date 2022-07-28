@@ -1,0 +1,507 @@
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UhBeeZZIBA-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+html,
+body {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .hd {
+  padding: 30px 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: 0.3s ease;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger {
+  display: block;
+}
+header .hd nav .sub-nav ul:hover li .sub-burger ul li a:hover {
+  color: #FC9803;
+}
+header .hd h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+header .hd h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+header .hd nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav {
+  width: 100%;
+}
+header .hd nav .sub-nav ul {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+header .hd nav .sub-nav ul li {
+  width: 30%;
+  text-align: center;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(1) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(2) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(3) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li a:nth-of-type(4) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+header .hd nav .sub-nav ul li .sub-burger {
+  display: none;
+  margin-top: 40px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul {
+  width: 100%;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(1) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(2) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(3) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(4) {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  padding: 15px 0px;
+}
+header .hd .small-nav a:nth-of-type(1) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd .small-nav a:nth-of-type(2) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header .hd.bgopen {
+  background-color: #FFEAB5;
+}
+header a:hover {
+  color: #FC9803;
+}
+
+footer {
+  padding: 50px;
+  background-color: #FFDD85;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .logobox h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+footer .logobox h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+footer .fo-nav {
+  width: 50%;
+}
+footer .fo-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .fo-nav ul li {
+  text-align: center;
+}
+footer .fo-nav ul li a {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+}
+footer .fo-nav ul li div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+footer .fo-nav ul li div a {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+  margin: 10px 0;
+}
+footer .copy {
+  width: 100%;
+}
+footer a:hover {
+  color: #FC9803;
+}
+footer ul li div a:hover {
+  color: #FC9803;
+}
+
+body {
+  counter-reset: count;
+}
+
+main .vanner p {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  background-color: rgba(255, 224, 190, 0.8);
+}
+main .vanner p img {
+  vertical-align: top;
+  width: 100%;
+  opacity: 0.6;
+}
+main .adpot {
+  text-align: center;
+}
+main .adpot hgroup {
+  margin-top: 70px;
+}
+main .adpot hgroup h2 {
+  font-family: "S-CoreDream-6Bold";
+  padding: 0;
+  margin: 0px;
+  font-size: 2.5rem;
+}
+main .adpot hgroup h4 {
+  margin: 0;
+  margin-top: 20px;
+  font-family: "S-CoreDream-3Light";
+  font-weight: 300;
+  font-size: 1.3rem;
+  white-space: pre-line;
+  color: #8E8E8E;
+}
+main .process {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+main .process .pro-box h4 {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+main .process .pro-box ul {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .process .pro-box ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 50px;
+  width: 45%;
+  background-color: #FFF3DB;
+  border-radius: 30px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+main .process .pro-box ul li .li-img {
+  width: 35%;
+}
+main .process .pro-box ul li .li-img p {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 200px;
+  vertical-align: top;
+}
+main .process .pro-box ul li .li-img p img {
+  width: 70%;
+  height: 100%;
+  padding: 30px;
+  margin: 0 30px;
+  vertical-align: top;
+}
+main .process .pro-box ul li .li-txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+main .process .pro-box ul li .li-txt p {
+  font-family: "S-CoreDream-3Light";
+  font-size: 1rem;
+}
+main .process .pro-box ul li .li-txt p span {
+  font-family: "S-CoreDream-3Light";
+  color: #8E8E8E;
+}
+main .process .pro-box ul li::before {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  text-align: center;
+  counter-increment: count;
+  content: "" counter(count, decimal-leading-zero) "";
+  display: block;
+  width: 80px;
+  height: 50px;
+  background-color: #FFEAB5;
+  border-radius: 0px 0px 20px 20px;
+  font-family: "S-CoreDream-5Medium";
+  color: #444;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 10px;
+}
+main .process .pro-box ul li:hover::before {
+  color: #FC9803;
+}
+main .caution {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+main .caution h4 {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+main .caution h4::before {
+  font-family: "FontAwesome";
+  content: "\f06a";
+  margin: 0;
+  padding-right: 20px;
+  color: #FFD231;
+}
+main .caution .txt-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  border: 5px solid #FFD231;
+  border-radius: 30px;
+  padding: 30px 60px;
+}
+main .caution .txt-box .pa-wang p {
+  display: inline-block;
+  margin: 0;
+  padding: 50px;
+  background-color: #FFF3DB;
+  border-radius: 30px;
+  width: 310px;
+  text-align: center;
+  font-family: "S-CoreDream-5Medium";
+  font-size: 1.5rem;
+  white-space: pre-line;
+}
+main .caution .txt-box .pa-wang p b {
+  font-family: "S-CoreDream-6Bold";
+  font-size: 1.8rem;
+  color: #DA3232;
+}
+main .caution .txt-box .pa-wang::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 110px;
+  padding: 20px;
+  border-right: 2px solid #FFD231;
+  margin: 0 20px;
+  transform: translate(50px, 30px);
+}
+main .caution .txt-box .ol-txt {
+  width: 65%;
+}
+main .caution .txt-box .ol-txt ol {
+  list-style-type: decimal !important;
+  padding: 0 150px 0 20px;
+}
+main .caution .txt-box .ol-txt ol li {
+  list-style-type: decimal !important;
+}
+main .caution .txt-box .ol-txt ol li p {
+  font-family: "S-CoreDream-4Regular";
+}
+main .caution .txt-box .youknow {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #FFD231;
+}
+main .caution .txt-box .youknow .know-img p {
+  width: 200px;
+  background-color: #FFF3DB;
+  border-radius: 100px;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+main .caution .txt-box .youknow .know-img p img {
+  padding: 30px;
+  width: 100%;
+  vertical-align: top;
+}
+main .caution .txt-box .youknow .know-txt {
+  width: 50%;
+  padding: 20px;
+}
+main .caution .txt-box .youknow .know-txt p {
+  font-family: "S-CoreDream-4Regular";
+}
+main .caution .txt-box .petlist-btn a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #FFF3DB;
+  border-radius: 100px;
+  font-family: "S-CoreDream-4Regular";
+}
+main .caution .txt-box .petlist-btn a::after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f054";
+  margin: 0;
+  padding-left: 20px;
+}
+main .pro-vanner {
+  margin-top: 250px;
+}
+main .pro-vanner p {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+main .pro-vanner p img {
+  width: 100%;
+  vertical-align: top;
+}/*# sourceMappingURL=adopt_02_process.css.map */
